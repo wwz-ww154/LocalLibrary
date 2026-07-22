@@ -1,0 +1,119 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="122" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="allure-pytest" />
+          <option value="allure-python-commons" />
+          <option value="aistudio-sdk" />
+          <option value="annotated-doc" />
+          <option value="annotated-types" />
+          <option value="anyio" />
+          <option value="astor" />
+          <option value="attrs" />
+          <option value="bce-python-sdk" />
+          <option value="bcrypt" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="chardet" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="colorama" />
+          <option value="colorlog" />
+          <option value="contourpy" />
+          <option value="crc32c" />
+          <option value="cryptography" />
+          <option value="cycler" />
+          <option value="decorator" />
+          <option value="et_xmlfile" />
+          <option value="exceptiongroup" />
+          <option value="filelock" />
+          <option value="fonttools" />
+          <option value="fsspec" />
+          <option value="future" />
+          <option value="h11" />
+          <option value="hf-xet" />
+          <option value="httpcore" />
+          <option value="httpx" />
+          <option value="huggingface_hub" />
+          <option value="idna" />
+          <option value="imagesize" />
+          <option value="iniconfig" />
+          <option value="invoke" />
+          <option value="json5" />
+          <option value="jsonpath-ng" />
+          <option value="kiwisolver" />
+          <option value="loguru" />
+          <option value="markdown-it-py" />
+          <option value="matplotlib" />
+          <option value="mdurl" />
+          <option value="modelscope" />
+          <option value="networkx" />
+          <option value="numpy" />
+          <option value="opencv-contrib-python" />
+          <option value="opencv-python" />
+          <option value="openpyxl" />
+          <option value="opt-einsum" />
+          <option value="outcome" />
+          <option value="packaging" />
+          <option value="paddleocr" />
+          <option value="paddlepaddle" />
+          <option value="paddlex" />
+          <option value="pandas" />
+          <option value="paramiko" />
+          <option value="pillow" />
+          <option value="pluggy" />
+          <option value="prettytable" />
+          <option value="protobuf" />
+          <option value="psutil" />
+          <option value="py-cpuinfo" />
+          <option value="pyclipper" />
+          <option value="pycparser" />
+          <option value="pycryptodome" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="Pygments" />
+          <option value="PyNaCl" />
+          <option value="pyparsing" />
+          <option value="pypdfium2" />
+          <option value="PySocks" />
+          <option value="pytest" />
+          <option value="python-dateutil" />
+          <option value="pythonping" />
+          <option value="pytz" />
+          <option value="PyYAML" />
+          <option value="requests" />
+          <option value="rich" />
+          <option value="ruamel.yaml" />
+          <option value="scp" />
+          <option value="selenium" />
+          <option value="shapely" />
+          <option value="shellingham" />
+          <option value="six" />
+          <option value="sniffio" />
+          <option value="sortedcontainers" />
+          <option value="tomli" />
+          <option value="tqdm" />
+          <option value="trio" />
+          <option value="trio-websocket" />
+          <option value="typer" />
+          <option value="typing-inspection" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="ujson" />
+          <option value="urllib3" />
+          <option value="wcwidth" />
+          <option value="websocket-client" />
+          <option value="win32_setctime" />
+          <option value="wsproto" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
