@@ -1,0 +1,400 @@
+2026-07-15 17:59:54,996 | INFO
+2026-07-15 17:59:55,199 | INFO
+2026-07-15 17:59:55,204 | INFO
+2026-07-15 17:59:55.204 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo dmesg -C > /dev/null 2>&1
+2026-07-15 17:59:55,296 | INFO
+2026-07-15 17:59:55.296 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:59:55,315 | INFO
+2026-07-15 17:59:55,527 | INFO
+2026-07-15 17:59:55,531 | INFO
+2026-07-15 17:59:55.531 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo truncate -s 0 /var/log/faillog
+2026-07-15 17:59:55,625 | INFO
+2026-07-15 17:59:55.625 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:59:55,645 | INFO
+2026-07-15 17:59:55,850 | INFO
+2026-07-15 17:59:55,855 | INFO
+2026-07-15 17:59:55.854 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo truncate -s 0 /var/log/dmesg
+2026-07-15 17:59:55,956 | INFO
+2026-07-15 17:59:55.956 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:59:55,968 | INFO
+2026-07-15 17:59:56,167 | INFO
+2026-07-15 17:59:56,172 | INFO
+2026-07-15 17:59:56.172 | INFO     | aux_os_w:run_cmd:49 - 命令下发：which xdotool
+2026-07-15 17:59:56,245 | INFO
+2026-07-15 17:59:56.244 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+/usr/bin/xdotool
+
+2026-07-15 17:59:56,251 | INFO
+2026-07-15 17:59:56.250 | INFO     | aux_os_w:ensure_xdotool:201 - xdotool 已安装
+2026-07-15 17:59:56,266 | INFO
+2026-07-15 17:59:56,471 | INFO
+2026-07-15 17:59:56,476 | INFO
+2026-07-15 17:59:56.475 | INFO     | aux_os_w:run_cmd:49 - 命令下发：hostnamectl status | grep Chassis 2>/dev/null
+2026-07-15 17:59:56,797 | INFO
+2026-07-15 17:59:56.797 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+           Chassis: server
+
+2026-07-15 17:59:56,804 | INFO
+2026-07-15 17:59:56.804 | INFO     | test_cases.bj_compatibility.os.test_os_record:test_os_record:28 - 当前机箱类型：desktop
+2026-07-15 17:59:56,820 | INFO
+2026-07-15 17:59:57,029 | INFO
+2026-07-15 17:59:57,034 | INFO
+2026-07-15 17:59:57.034 | INFO     | aux_os_w:run_cmd:49 - 命令下发：gcc -v 2>&1
+2026-07-15 17:59:57,110 | INFO
+2026-07-15 17:59:57.110 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Uos 8.3.0.13-deepin1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Uos 8.3.0.13-deepin1) 
+
+2026-07-15 17:59:57,117 | INFO
+2026-07-15 17:59:57.117 | INFO     | aux_os_w:get_os_type:99 - 当前待测机为Uos系统
+2026-07-15 17:59:57,133 | INFO
+2026-07-15 17:59:57,341 | INFO
+2026-07-15 17:59:57,346 | INFO
+2026-07-15 17:59:57.346 | INFO     | aux_os_w:run_cmd:49 - 命令下发：pactl list sinks | grep -E 'Active Port|端口'
+2026-07-15 17:59:57,429 | INFO
+2026-07-15 17:59:57.429 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+	端口：
+	活动端口：[Out] HDMI0
+	端口：
+	活动端口：analog-output-speaker
+
+2026-07-15 17:59:57,444 | INFO
+2026-07-15 17:59:57,652 | INFO
+2026-07-15 17:59:57,657 | INFO
+2026-07-15 17:59:57.656 | INFO     | aux_os_w:run_cmd:49 - 命令下发：pactl list sources
+2026-07-15 17:59:57,732 | INFO
+2026-07-15 17:59:57.732 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+信源 #0
+	状态：SUSPENDED
+	名称：alsa_output.pci-0000_02_00.0-platform-inno-audio.12.auto.HDMI__hw_InnosiliconCard_0__sink.monitor
+	描述：Monitor of InnosiliconCard HDMI0 Playback
+	驱动程序：module-alsa-card.c
+	采样规格：s16le 2ch 44100Hz
+	声道映射：front-left,front-right
+	所有者模块：7
+	静音：否
+	音量：front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        平衡 0.00
+	基础音量：65536 / 100% / 0.00 dB
+	信宿的监视器：alsa_output.pci-0000_02_00.0-platform-inno-audio.12.auto.HDMI__hw_InnosiliconCard_0__sink
+	延迟：0 微秒，已设置 0 微秒
+	标记：DECIBEL_VOLUME LATENCY 
+	属性：
+		device.description = "Monitor of InnosiliconCard HDMI0 Playback"
+		device.class = "monitor"
+		alsa.card = "0"
+		alsa.card_name = "InnosiliconCard"
+		alsa.long_card_name = "InnosiliconCard0-HDMI0"
+		alsa.driver_name = "innogpu"
+		device.bus_path = "pci-0000:02:00.0-platform-inno-audio.12.auto"
+		sysfs.path = "/devices/pci0000:00/0000:00:01.3/0000:02:00.0/inno-audio.12.auto/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "1ec8"
+		device.product.id = "9810"
+		device.string = "0"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+	格式：
+		pcm
+
+信源 #2
+	状态：SUSPENDED
+	名称：alsa_output.usb-Realtek_USB_Audio-00.analog-stereo-speaker-output.monitor
+	描述：Monitor of USB Audio Analog Stereo Speaker
+	驱动程序：module-alsa-card.c
+	采样规格：s16le 2ch 44100Hz
+	声道映射：front-left,front-right
+	所有者模块：8
+	静音：否
+	音量：front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        平衡 0.00
+	基础音量：65536 / 100% / 0.00 dB
+	信宿的监视器：alsa_output.usb-Realtek_USB_Audio-00.analog-stereo-speaker-output
+	延迟：0 微秒，已设置 0 微秒
+	标记：DECIBEL_VOLUME LATENCY 
+	属性：
+		device.description = "Monitor of USB Audio Analog Stereo Speaker"
+		device.class = "monitor"
+		alsa.card = "1"
+		alsa.card_name = "USB Audio"
+		alsa.long_card_name = "Realtek USB Audio at usb-0000:04:00.3-4.1.2, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "pci-0000:04:00.3-usb-0:4.1.2:1.0"
+		sysfs.path = "/devices/pci0000:00/0000:00:07.1/0000:04:00.3/usb1/1-4/1-4.1/1-4.1.2/1-4.1.2:1.0/sound/card1"
+		udev.id = "usb-Realtek_USB_Audio-00"
+		device.bus = "usb"
+		device.vendor.id = "0bda"
+		device.vendor.name = "Realtek Semiconductor Corp."
+		device.product.id = "4f18"
+		device.product.name = "USB Audio"
+		device.serial = "Realtek_USB_Audio"
+		device.string = "1"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	格式：
+		pcm
+
+2026-07-15 17:59:57,736 | INFO
+2026-07-15 17:59:57.736 | INFO     | test_cases.bj_compatibility.os.test_os_record:test_os_record:90 - 当前麦克风/输入端口: 信源 #0
+	状态：suspended
+	名称：alsa_output.pci-0000_02_00.0-platform-inno-audio.12.auto.hdmi__hw_innosiliconcard_0__sink.monitor
+	描述：monitor of innosiliconcard hdmi0 playback
+	驱动程序：module-alsa-card.c
+	采样规格：s16le 2ch 44100hz
+	声道映射：front-left,front-right
+	所有者模块：7
+	静音：否
+	音量：front-left: 65536 / 100% / 0.00 db,   front-right: 65536 / 100% / 0.00 db
+	        平衡 0.00
+	基础音量：65536 / 100% / 0.00 db
+	信宿的监视器：alsa_output.pci-0000_02_00.0-platform-inno-audio.12.auto.hdmi__hw_innosiliconcard_0__sink
+	延迟：0 微秒，已设置 0 微秒
+	标记：decibel_volume latency 
+	属性：
+		device.description = "monitor of innosiliconcard hdmi0 playback"
+		device.class = "monitor"
+		alsa.card = "0"
+		alsa.card_name = "innosiliconcard"
+		alsa.long_card_name = "innosiliconcard0-hdmi0"
+		alsa.driver_name = "innogpu"
+		device.bus_path = "pci-0000:02:00.0-platform-inno-audio.12.auto"
+		sysfs.path = "/devices/pci0000:00/0000:00:01.3/0000:02:00.0/inno-audio.12.auto/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "1ec8"
+		device.product.id = "9810"
+		device.string = "0"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+	格式：
+		pcm
+
+信源 #2
+	状态：suspended
+	名称：alsa_output.usb-realtek_usb_audio-00.analog-stereo-speaker-output.monitor
+	描述：monitor of usb audio analog stereo speaker
+	驱动程序：module-alsa-card.c
+	采样规格：s16le 2ch 44100hz
+	声道映射：front-left,front-right
+	所有者模块：8
+	静音：否
+	音量：front-left: 65536 / 100% / 0.00 db,   front-right: 65536 / 100% / 0.00 db
+	        平衡 0.00
+	基础音量：65536 / 100% / 0.00 db
+	信宿的监视器：alsa_output.usb-realtek_usb_audio-00.analog-stereo-speaker-output
+	延迟：0 微秒，已设置 0 微秒
+	标记：decibel_volume latency 
+	属性：
+		device.description = "monitor of usb audio analog stereo speaker"
+		device.class = "monitor"
+		alsa.card = "1"
+		alsa.card_name = "usb audio"
+		alsa.long_card_name = "realtek usb audio at usb-0000:04:00.3-4.1.2, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "pci-0000:04:00.3-usb-0:4.1.2:1.0"
+		sysfs.path = "/devices/pci0000:00/0000:00:07.1/0000:04:00.3/usb1/1-4/1-4.1/1-4.1.2/1-4.1.2:1.0/sound/card1"
+		udev.id = "usb-realtek_usb_audio-00"
+		device.bus = "usb"
+		device.vendor.id = "0bda"
+		device.vendor.name = "realtek semiconductor corp."
+		device.product.id = "4f18"
+		device.product.name = "usb audio"
+		device.serial = "realtek_usb_audio"
+		device.string = "1"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	格式：
+		pcm
+2026-07-15 17:59:57,740 | INFO
+2026-07-15 17:59:57.739 | INFO     | test_cases.bj_compatibility.os.test_os_record:test_os_record:93 - 未检测到麦克风插入
+2026-07-15 18:00:08,762 | INFO
+2026-07-15 18:00:08,967 | INFO
+2026-07-15 18:00:08,971 | INFO
+2026-07-15 18:00:08.970 | INFO     | aux_os_w:run_cmd:49 - 命令下发：pactl list sources
+2026-07-15 18:00:09,054 | INFO
+2026-07-15 18:00:09.054 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+信源 #0
+	状态：SUSPENDED
+	名称：alsa_output.pci-0000_02_00.0-platform-inno-audio.12.auto.HDMI__hw_InnosiliconCard_0__sink.monitor
+	描述：Monitor of InnosiliconCard HDMI0 Playback
+	驱动程序：module-alsa-card.c
+	采样规格：s16le 2ch 44100Hz
+	声道映射：front-left,front-right
+	所有者模块：7
+	静音：否
+	音量：front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        平衡 0.00
+	基础音量：65536 / 100% / 0.00 dB
+	信宿的监视器：alsa_output.pci-0000_02_00.0-platform-inno-audio.12.auto.HDMI__hw_InnosiliconCard_0__sink
+	延迟：0 微秒，已设置 0 微秒
+	标记：DECIBEL_VOLUME LATENCY 
+	属性：
+		device.description = "Monitor of InnosiliconCard HDMI0 Playback"
+		device.class = "monitor"
+		alsa.card = "0"
+		alsa.card_name = "InnosiliconCard"
+		alsa.long_card_name = "InnosiliconCard0-HDMI0"
+		alsa.driver_name = "innogpu"
+		device.bus_path = "pci-0000:02:00.0-platform-inno-audio.12.auto"
+		sysfs.path = "/devices/pci0000:00/0000:00:01.3/0000:02:00.0/inno-audio.12.auto/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "1ec8"
+		device.product.id = "9810"
+		device.string = "0"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+	格式：
+		pcm
+
+信源 #3
+	状态：RUNNING
+	名称：alsa_input.usb-Realtek_USB_Audio-00.analog-stereo-mic-input
+	描述：USB Audio Analog Stereo Input
+	驱动程序：module-alsa-card.c
+	采样规格：s16le 2ch 44100Hz
+	声道映射：front-left,front-right
+	所有者模块：8
+	静音：否
+	音量：front-left: 32768 /  50% / -10.84 dB,   front-right: 32768 /  50% / -10.84 dB
+	        平衡 0.00
+	基础音量：9619 /  15% / -30.00 dB
+	信宿的监视器：n/a
+	延迟：5824 微秒，已设置 40000 微秒
+	标记：HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY 
+	属性：
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio #2"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "2"
+		alsa.card = "1"
+		alsa.card_name = "USB Audio"
+		alsa.long_card_name = "Realtek USB Audio at usb-0000:04:00.3-4.1.2, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.bus_path = "pci-0000:04:00.3-usb-0:4.1.2:1.0"
+		sysfs.path = "/devices/pci0000:00/0000:00:07.1/0000:04:00.3/usb1/1-4/1-4.1/1-4.1.2/1-4.1.2:1.0/sound/card1"
+		udev.id = "usb-Realtek_USB_Audio-00"
+		device.bus = "usb"
+		device.vendor.id = "0bda"
+		device.vendor.name = "Realtek Semiconductor Corp."
+		device.product.id = "4f18"
+		device.product.name = "USB Audio"
+		device.serial = "Realtek_USB_Audio"
+		device.string = "hw:1,2,0"
+		device.buffering.buffer_size = "352800"
+		device.buffering.fragment_size = "176400"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo-mic-input"
+		device.profile.description = "Analog Stereo Input"
+		device.description = "USB Audio Analog Stereo Input"
+		alsa.mixer_name = "USB Mixer"
+		alsa.components = "USB0bda:4f18"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-usb"
+	端口：
+		analog-input-mic: 话筒 (priority: 8700, available)
+	活动端口：analog-input-mic
+	格式：
+		pcm
+
+2026-07-15 18:00:11,070 | INFO
+2026-07-15 18:00:11,272 | INFO
+2026-07-15 18:00:11,277 | INFO
+2026-07-15 18:00:11.276 | INFO     | aux_os_w:run_cmd:49 - 命令下发：pkill deepin-voice-note 2>/dev/null || true
+2026-07-15 18:00:11,364 | INFO
+2026-07-15 18:00:11.363 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:12,382 | INFO
+2026-07-15 18:00:12,589 | INFO
+2026-07-15 18:00:12,593 | INFO
+2026-07-15 18:00:12.593 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; deepin-voice-note > /dev/null 2>&1 &
+2026-07-15 18:00:12,668 | INFO
+2026-07-15 18:00:12.667 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:15,675 | INFO
+2026-07-15 18:00:15.675 | INFO     | test_cases.bj_compatibility.os.test_os_record:record_once:182 - 点击添加笔记按钮
+2026-07-15 18:00:15,694 | INFO
+2026-07-15 18:00:15,901 | INFO
+2026-07-15 18:00:15,906 | INFO
+2026-07-15 18:00:15.905 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; xdotool mousemove 800 820 click 1
+2026-07-15 18:00:16,075 | INFO
+2026-07-15 18:00:16.075 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:18,080 | INFO
+2026-07-15 18:00:18.080 | INFO     | test_cases.bj_compatibility.os.test_os_record:record_once:186 - 点击录音键
+2026-07-15 18:00:18,093 | INFO
+2026-07-15 18:00:18,296 | INFO
+2026-07-15 18:00:18,300 | INFO
+2026-07-15 18:00:18.300 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; xdotool mousemove 1188 805 click 1
+2026-07-15 18:00:18,474 | INFO
+2026-07-15 18:00:18.473 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:20,483 | INFO
+2026-07-15 18:00:20.482 | INFO     | test_cases.bj_compatibility.os.test_os_record:record_once:191 - 录音中，持续300秒...
+2026-07-15 18:00:52,433 | INFO
+2026-07-15 18:00:52,635 | INFO
+2026-07-15 18:00:52,639 | INFO
+2026-07-15 18:00:52.639 | INFO     | aux_os_w:run_cmd:49 - 命令下发：mkdir -p /tmp/log_check
+2026-07-15 18:00:52,716 | INFO
+2026-07-15 18:00:52.715 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:52,733 | INFO
+2026-07-15 18:00:52,938 | INFO
+2026-07-15 18:00:53,016 | INFO
+2026-07-15 18:00:53,059 | INFO
+2026-07-15 18:00:53.059 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/config.cfg -> /tmp/log_check/config.cfg
+2026-07-15 18:00:53,077 | INFO
+2026-07-15 18:00:53.077 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/keyword.txt -> /tmp/log_check/keyword.txt
+2026-07-15 18:00:53,088 | INFO
+2026-07-15 18:00:53.088 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/log-exception-check.py -> /tmp/log_check/log-exception-check.py
+2026-07-15 18:00:53,097 | INFO
+2026-07-15 18:00:53.097 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/log_checker.py -> /tmp/log_check/log_checker.py
+2026-07-15 18:00:53,105 | INFO
+2026-07-15 18:00:53.105 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/run.sh -> /tmp/log_check/run.sh
+2026-07-15 18:00:53,106 | INFO
+2026-07-15 18:00:53.106 | INFO     | aux_os_w:upload_dir_sftp:391 - 目录上传完成: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1 -> /tmp/log_check
+2026-07-15 18:00:53,107 | INFO
+2026-07-15 18:00:53,116 | INFO
+2026-07-15 18:00:53,314 | INFO
+2026-07-15 18:00:53,319 | INFO
+2026-07-15 18:00:53.318 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/log_check/检测结果.log
+2026-07-15 18:00:53,392 | INFO
+2026-07-15 18:00:53.392 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:53,414 | INFO
+2026-07-15 18:00:53,566 | INFO
+2026-07-15 18:00:53,571 | INFO
+2026-07-15 18:00:53.570 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cd /tmp/log_check && sudo python3 log_checker.py
+2026-07-15 18:00:53,693 | INFO
+2026-07-15 18:00:53.693 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+2026/07/15  18:00:55 关键词加载完成，共 34 个条目。
+2026/07/15  18:00:55 检测结果将写入: 检测结果.log
+2026/07/15  18:00:55 正在检测: /var/log/dmesg
+2026/07/15  18:00:55   -> 未发现异常
+2026/07/15  18:00:55 正在检测: /var/log/faillog
+2026/07/15  18:00:55   -> 未发现异常
+2026/07/15  18:00:55 检测完成，未发现任何异常。
+
+2026-07-15 18:00:53,711 | INFO
+2026-07-15 18:00:53,914 | INFO
+2026-07-15 18:00:53,919 | INFO
+2026-07-15 18:00:53.919 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /tmp/log_check/检测结果.log 2>/dev/null
+2026-07-15 18:00:53,994 | INFO
+2026-07-15 18:00:53.993 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 18:00:54,001 | INFO
+2026-07-15 18:00:54.000 | SUCCESS  | aux_os_w:final_log_check_write_journallog:420 - 日志检测没有异常

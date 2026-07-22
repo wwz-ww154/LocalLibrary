@@ -1,0 +1,393 @@
+2026-07-07 11:15:34,847 | INFO
+2026-07-07 11:15:34,901 | INFO
+2026-07-07 11:15:34,901 | INFO
+2026-07-07 11:15:34,902 | INFO
+2026-07-07 11:15:34.902 | INFO     | aux_os_w:run_cmd:43 - 命令下发：sudo dmesg -C > /dev/null 2>&1
+2026-07-07 11:15:35,011 | INFO
+2026-07-07 11:15:35.010 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:35,035 | INFO
+2026-07-07 11:15:35,069 | INFO
+2026-07-07 11:15:35,069 | INFO
+2026-07-07 11:15:35,069 | INFO
+2026-07-07 11:15:35.069 | INFO     | aux_os_w:run_cmd:43 - 命令下发：sudo truncate -s 0 /var/log/faillog
+2026-07-07 11:15:35,176 | INFO
+2026-07-07 11:15:35.175 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:35,203 | INFO
+2026-07-07 11:15:35,261 | INFO
+2026-07-07 11:15:35,261 | INFO
+2026-07-07 11:15:35,261 | INFO
+2026-07-07 11:15:35.261 | INFO     | aux_os_w:run_cmd:43 - 命令下发：sudo truncate -s 0 /var/log/dmesg
+2026-07-07 11:15:35,374 | INFO
+2026-07-07 11:15:35.374 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:35,400 | INFO
+2026-07-07 11:15:35,458 | INFO
+2026-07-07 11:15:35,459 | INFO
+2026-07-07 11:15:35,459 | INFO
+2026-07-07 11:15:35.459 | INFO     | aux_os_w:run_cmd:43 - 命令下发：gcc -v 2>&1
+2026-07-07 11:15:35,544 | INFO
+2026-07-07 11:15:35.543 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Kylin 9.3.0-10kylin5k0.5' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Kylin 9.3.0-10kylin5k0.5) 
+
+2026-07-07 11:15:35,545 | INFO
+2026-07-07 11:15:35.545 | INFO     | aux_os_w:get_os_type:82 - 当前待测机为Kylin系统
+2026-07-07 11:15:35,562 | INFO
+2026-07-07 11:15:35,616 | INFO
+2026-07-07 11:15:35,616 | INFO
+2026-07-07 11:15:35,617 | INFO
+2026-07-07 11:15:35.617 | INFO     | aux_os_w:run_cmd:43 - 命令下发：which xdotool
+2026-07-07 11:15:35,707 | INFO
+2026-07-07 11:15:35.707 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/usr/bin/xdotool
+
+2026-07-07 11:15:35,708 | INFO
+2026-07-07 11:15:35.708 | INFO     | aux_os_w:ensure_xdotool:211 - xdotool 已安装
+2026-07-07 11:15:35,732 | INFO
+2026-07-07 11:15:35,783 | INFO
+2026-07-07 11:15:35,783 | INFO
+2026-07-07 11:15:35,784 | INFO
+2026-07-07 11:15:35.784 | INFO     | aux_os_w:run_cmd:43 - 命令下发：which scrot
+2026-07-07 11:15:35,877 | INFO
+2026-07-07 11:15:35.877 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/usr/bin/scrot
+
+2026-07-07 11:15:35,878 | INFO
+2026-07-07 11:15:35.877 | INFO     | aux_os_w:ensure_screenshot_tool:225 - scrot 已安装
+2026-07-07 11:15:35,910 | INFO
+2026-07-07 11:15:35,965 | INFO
+2026-07-07 11:15:35,966 | INFO
+2026-07-07 11:15:35,966 | INFO
+2026-07-07 11:15:35.966 | INFO     | aux_os_w:run_cmd:43 - 命令下发：which mpv
+2026-07-07 11:15:36,047 | INFO
+2026-07-07 11:15:36.047 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/usr/bin/mpv
+
+2026-07-07 11:15:36,062 | INFO
+2026-07-07 11:15:36,093 | INFO
+2026-07-07 11:15:36,093 | INFO
+2026-07-07 11:15:36,093 | INFO
+2026-07-07 11:15:36.093 | INFO     | aux_os_w:run_cmd:43 - 命令下发：which wps
+2026-07-07 11:15:36,187 | INFO
+2026-07-07 11:15:36.187 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/usr/bin/wps
+
+2026-07-07 11:15:36,211 | INFO
+2026-07-07 11:15:36,245 | INFO
+2026-07-07 11:15:36,245 | INFO
+2026-07-07 11:15:36,246 | INFO
+2026-07-07 11:15:36.246 | INFO     | aux_os_w:run_cmd:43 - 命令下发：which aplay
+2026-07-07 11:15:36,338 | INFO
+2026-07-07 11:15:36.337 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/usr/bin/aplay
+
+2026-07-07 11:15:36,338 | INFO
+2026-07-07 11:15:36.338 | INFO     | test_cases.bj_compatibility.os.test_os_mt:test_os_mt:39 - #############C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\media_dir\test_video.mp4
+2026-07-07 11:15:36,363 | INFO
+2026-07-07 11:15:36,415 | INFO
+2026-07-07 11:15:36,415 | INFO
+2026-07-07 11:15:36,508 | INFO
+2026-07-07 11:15:36,540 | INFO
+2026-07-07 11:15:36.540 | INFO     | aux_os_w:upload_file_sftp:342 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\media_dir\test_video.mp4 -> /tmp/test_video.mp4
+2026-07-07 11:15:36,540 | INFO
+2026-07-07 11:15:36,563 | INFO
+2026-07-07 11:15:36,596 | INFO
+2026-07-07 11:15:36,596 | INFO
+2026-07-07 11:15:36,695 | INFO
+2026-07-07 11:15:36,749 | INFO
+2026-07-07 11:15:36.749 | INFO     | aux_os_w:upload_file_sftp:342 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\media_dir\test.wav -> /tmp/test.wav
+2026-07-07 11:15:36,749 | INFO
+2026-07-07 11:15:36,764 | INFO
+2026-07-07 11:15:36,807 | INFO
+2026-07-07 11:15:36,808 | INFO
+2026-07-07 11:15:36,809 | INFO
+2026-07-07 11:15:36.808 | INFO     | aux_os_w:run_cmd:43 - 命令下发：touch /tmp/test.docx
+2026-07-07 11:15:36,889 | INFO
+2026-07-07 11:15:36.889 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:36,914 | INFO
+2026-07-07 11:15:36,948 | INFO
+2026-07-07 11:15:36,949 | INFO
+2026-07-07 11:15:36,949 | INFO
+2026-07-07 11:15:36.949 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key super+e
+2026-07-07 11:15:37,073 | INFO
+2026-07-07 11:15:37.073 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:39,090 | INFO
+2026-07-07 11:15:39,139 | INFO
+2026-07-07 11:15:39,139 | INFO
+2026-07-07 11:15:39,140 | INFO
+2026-07-07 11:15:39.140 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; qaxbrowser https://www.baidu.com >/dev/null 2>&1 &
+2026-07-07 11:15:39,225 | INFO
+2026-07-07 11:15:39.225 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:41,240 | INFO
+2026-07-07 11:15:41,288 | INFO
+2026-07-07 11:15:41,288 | INFO
+2026-07-07 11:15:41,288 | INFO
+2026-07-07 11:15:41.288 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; nohup wps /tmp/test.docx > /dev/null 2>&1 &
+2026-07-07 11:15:41,384 | INFO
+2026-07-07 11:15:41.383 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:44,400 | INFO
+2026-07-07 11:15:44,448 | INFO
+2026-07-07 11:15:44,449 | INFO
+2026-07-07 11:15:44,449 | INFO
+2026-07-07 11:15:44.449 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool search --class wps windowactivate
+2026-07-07 11:15:44,559 | INFO
+2026-07-07 11:15:44.558 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:45,576 | INFO
+2026-07-07 11:15:45,637 | INFO
+2026-07-07 11:15:45,638 | INFO
+2026-07-07 11:15:45,639 | INFO
+2026-07-07 11:15:45.639 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key Escape Escape Escape
+2026-07-07 11:15:45,769 | INFO
+2026-07-07 11:15:45.769 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:46,801 | INFO
+2026-07-07 11:15:46,861 | INFO
+2026-07-07 11:15:46,861 | INFO
+2026-07-07 11:15:46,862 | INFO
+2026-07-07 11:15:46.862 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool search --class wps windowactivate
+2026-07-07 11:15:46,973 | INFO
+2026-07-07 11:15:46.973 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:47,990 | INFO
+2026-07-07 11:15:48,088 | INFO
+2026-07-07 11:15:48,089 | INFO
+2026-07-07 11:15:48,089 | INFO
+2026-07-07 11:15:48.089 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool type '自动化测试文本'
+2026-07-07 11:15:48,518 | INFO
+2026-07-07 11:15:48.518 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:49,549 | INFO
+2026-07-07 11:15:49,603 | INFO
+2026-07-07 11:15:49,604 | INFO
+2026-07-07 11:15:49,605 | INFO
+2026-07-07 11:15:49.605 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key ctrl+s
+2026-07-07 11:15:49,727 | INFO
+2026-07-07 11:15:49.727 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:50,744 | INFO
+2026-07-07 11:15:50,844 | INFO
+2026-07-07 11:15:50,844 | INFO
+2026-07-07 11:15:50,844 | INFO
+2026-07-07 11:15:50.844 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; nohup bash -c 'while true; do aplay /tmp/test.wav; sleep 0.5; done' > /dev/null 2>&1 & echo $!
+2026-07-07 11:15:50,939 | INFO
+2026-07-07 11:15:50.939 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+579641
+
+2026-07-07 11:15:50,940 | INFO
+2026-07-07 11:15:50.940 | INFO     | test_cases.bj_compatibility.os.test_os_mt:test_os_mt:86 - 音频循环进程 PID: 579641
+2026-07-07 11:15:50,964 | INFO
+2026-07-07 11:15:51,014 | INFO
+2026-07-07 11:15:51,015 | INFO
+2026-07-07 11:15:51,016 | INFO
+2026-07-07 11:15:51.016 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; nohup mpv --loop=inf /tmp/test_video.mp4 > /dev/null 2>&1 & echo $!
+2026-07-07 11:15:51,112 | INFO
+2026-07-07 11:15:51.112 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+579657
+
+2026-07-07 11:15:51,114 | INFO
+2026-07-07 11:15:51.114 | INFO     | test_cases.bj_compatibility.os.test_os_mt:test_os_mt:93 - 视频进程 PID: 579657
+2026-07-07 11:15:53,132 | INFO
+2026-07-07 11:15:53,193 | INFO
+2026-07-07 11:15:53,194 | INFO
+2026-07-07 11:15:53,194 | INFO
+2026-07-07 11:15:53.194 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key f
+2026-07-07 11:15:53,306 | INFO
+2026-07-07 11:15:53.306 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:55,325 | INFO
+2026-07-07 11:15:55,387 | INFO
+2026-07-07 11:15:55,387 | INFO
+2026-07-07 11:15:55,388 | INFO
+2026-07-07 11:15:55.388 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key f
+2026-07-07 11:15:55,488 | INFO
+2026-07-07 11:15:55.487 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:15:57,519 | INFO
+2026-07-07 11:15:57,581 | INFO
+2026-07-07 11:15:57,582 | INFO
+2026-07-07 11:15:57,582 | INFO
+2026-07-07 11:15:57.582 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; nohup ukui-system-monitor > /dev/null 2>&1 &
+2026-07-07 11:15:57,676 | INFO
+2026-07-07 11:15:57.676 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:07,690 | INFO
+2026-07-07 11:16:07,753 | INFO
+2026-07-07 11:16:07,754 | INFO
+2026-07-07 11:16:07,755 | INFO
+2026-07-07 11:16:07.755 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; scrot /tmp/os_mt_系统监视器_20260707_111607.png
+2026-07-07 11:16:07,969 | INFO
+2026-07-07 11:16:07.969 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:07,998 | INFO
+2026-07-07 11:16:08,052 | INFO
+2026-07-07 11:16:08,052 | INFO
+2026-07-07 11:16:08,145 | INFO
+2026-07-07 11:16:08,211 | INFO
+2026-07-07 11:16:08,240 | INFO
+2026-07-07 11:16:08,336 | INFO
+2026-07-07 11:16:08,337 | INFO
+2026-07-07 11:16:08,338 | INFO
+2026-07-07 11:16:08.337 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; kill 579641 2>/dev/null || true
+2026-07-07 11:16:08,432 | INFO
+2026-07-07 11:16:08.432 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:08,457 | INFO
+2026-07-07 11:16:08,510 | INFO
+2026-07-07 11:16:08,510 | INFO
+2026-07-07 11:16:08,511 | INFO
+2026-07-07 11:16:08.511 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; kill 579657 2>/dev/null || true
+2026-07-07 11:16:08,602 | INFO
+2026-07-07 11:16:08.602 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:08,625 | INFO
+2026-07-07 11:16:08,679 | INFO
+2026-07-07 11:16:08,680 | INFO
+2026-07-07 11:16:08,680 | INFO
+2026-07-07 11:16:08.680 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill wps 2>/dev/null || true
+2026-07-07 11:16:08,831 | INFO
+2026-07-07 11:16:08.831 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:08,854 | INFO
+2026-07-07 11:16:08,906 | INFO
+2026-07-07 11:16:08,906 | INFO
+2026-07-07 11:16:08,906 | INFO
+2026-07-07 11:16:08.906 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill mpv 2>/dev/null || true
+2026-07-07 11:16:09,063 | INFO
+2026-07-07 11:16:09.063 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:09,087 | INFO
+2026-07-07 11:16:09,149 | INFO
+2026-07-07 11:16:09,149 | INFO
+2026-07-07 11:16:09,149 | INFO
+2026-07-07 11:16:09.149 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill aplay 2>/dev/null || true
+2026-07-07 11:16:09,305 | INFO
+2026-07-07 11:16:09.305 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:09,331 | INFO
+2026-07-07 11:16:09,386 | INFO
+2026-07-07 11:16:09,386 | INFO
+2026-07-07 11:16:09,387 | INFO
+2026-07-07 11:16:09.387 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill qaxbrowser 2>/dev/null || true
+2026-07-07 11:16:09,550 | INFO
+2026-07-07 11:16:09.550 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:09,576 | INFO
+2026-07-07 11:16:09,639 | INFO
+2026-07-07 11:16:09,640 | INFO
+2026-07-07 11:16:09,640 | INFO
+2026-07-07 11:16:09.640 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill browser 2>/dev/null || true
+2026-07-07 11:16:09,797 | INFO
+2026-07-07 11:16:09.797 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:09,819 | INFO
+2026-07-07 11:16:09,870 | INFO
+2026-07-07 11:16:09,870 | INFO
+2026-07-07 11:16:09,870 | INFO
+2026-07-07 11:16:09.870 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill kylin-system-monitor 2>/dev/null || true
+2026-07-07 11:16:10,048 | INFO
+2026-07-07 11:16:10.048 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:10,066 | INFO
+2026-07-07 11:16:10,123 | INFO
+2026-07-07 11:16:10,123 | INFO
+2026-07-07 11:16:10,123 | INFO
+2026-07-07 11:16:10.123 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill deepin-system-monitor 2>/dev/null || true
+2026-07-07 11:16:10,269 | INFO
+2026-07-07 11:16:10.269 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:10,296 | INFO
+2026-07-07 11:16:10,355 | INFO
+2026-07-07 11:16:10,356 | INFO
+2026-07-07 11:16:10,357 | INFO
+2026-07-07 11:16:10.356 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; pkill peony 2>/dev/null || true
+2026-07-07 11:16:10,505 | INFO
+2026-07-07 11:16:10.505 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:10,526 | INFO
+2026-07-07 11:16:10,559 | INFO
+2026-07-07 11:16:10,560 | INFO
+2026-07-07 11:16:10,560 | INFO
+2026-07-07 11:16:10.560 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key Alt+F4
+2026-07-07 11:16:10,683 | INFO
+2026-07-07 11:16:10.682 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:10,709 | INFO
+2026-07-07 11:16:10,761 | INFO
+2026-07-07 11:16:10,761 | INFO
+2026-07-07 11:16:10,762 | INFO
+2026-07-07 11:16:10.762 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key Alt+F4
+2026-07-07 11:16:10,885 | INFO
+2026-07-07 11:16:10.884 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:10,910 | INFO
+2026-07-07 11:16:10,966 | INFO
+2026-07-07 11:16:10,966 | INFO
+2026-07-07 11:16:10,967 | INFO
+2026-07-07 11:16:10.967 | INFO     | aux_os_w:run_cmd:43 - 命令下发：mkdir -p /tmp/log_check
+2026-07-07 11:16:11,052 | INFO
+2026-07-07 11:16:11.052 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:11,076 | INFO
+2026-07-07 11:16:11,129 | INFO
+2026-07-07 11:16:11,130 | INFO
+2026-07-07 11:16:11,222 | INFO
+2026-07-07 11:16:11,235 | INFO
+2026-07-07 11:16:11.235 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\config.cfg -> /tmp/log_check/config.cfg
+2026-07-07 11:16:11,244 | INFO
+2026-07-07 11:16:11.244 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\keyword.txt -> /tmp/log_check/keyword.txt
+2026-07-07 11:16:11,253 | INFO
+2026-07-07 11:16:11.253 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\log-exception-check.py -> /tmp/log_check/log-exception-check.py
+2026-07-07 11:16:11,262 | INFO
+2026-07-07 11:16:11.261 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\log_checker.py -> /tmp/log_check/log_checker.py
+2026-07-07 11:16:11,267 | INFO
+2026-07-07 11:16:11.267 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\run.sh -> /tmp/log_check/run.sh
+2026-07-07 11:16:11,268 | INFO
+2026-07-07 11:16:11.268 | INFO     | aux_os_w:upload_dir_sftp:401 - 目录上传完成: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1 -> /tmp/log_check
+2026-07-07 11:16:11,268 | INFO
+2026-07-07 11:16:11,291 | INFO
+2026-07-07 11:16:11,326 | INFO
+2026-07-07 11:16:11,327 | INFO
+2026-07-07 11:16:11,327 | INFO
+2026-07-07 11:16:11.327 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /tmp/log_check/检测结果.log
+2026-07-07 11:16:11,420 | INFO
+2026-07-07 11:16:11.420 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:11,445 | INFO
+2026-07-07 11:16:11,484 | INFO
+2026-07-07 11:16:11,485 | INFO
+2026-07-07 11:16:11,486 | INFO
+2026-07-07 11:16:11.485 | INFO     | aux_os_w:run_cmd:43 - 命令下发：cd /tmp/log_check && sudo python3 log_checker.py
+2026-07-07 11:16:11,620 | INFO
+2026-07-07 11:16:11.620 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+2026/07/07  11:16:11 关键词加载完成，共 34 个条目。
+2026/07/07  11:16:11 检测结果将写入: 检测结果.log
+2026/07/07  11:16:11 正在检测: /var/log/dmesg
+2026/07/07  11:16:11   -> 未发现异常
+2026/07/07  11:16:11 正在检测: /var/log/faillog
+2026/07/07  11:16:11   -> 未发现异常
+2026/07/07  11:16:11 检测完成，未发现任何异常。
+
+2026-07-07 11:16:11,640 | INFO
+2026-07-07 11:16:11,740 | INFO
+2026-07-07 11:16:11,741 | INFO
+2026-07-07 11:16:11,741 | INFO
+2026-07-07 11:16:11.741 | INFO     | aux_os_w:run_cmd:43 - 命令下发：cat /tmp/log_check/检测结果.log 2>/dev/null
+2026-07-07 11:16:11,839 | INFO
+2026-07-07 11:16:11.839 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 11:16:11,841 | INFO
+2026-07-07 11:16:11.841 | SUCCESS  | aux_os_w:final_log_check_write_journallog:430 - 日志检测没有异常

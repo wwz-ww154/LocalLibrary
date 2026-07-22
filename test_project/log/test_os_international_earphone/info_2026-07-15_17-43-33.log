@@ -1,0 +1,688 @@
+2026-07-15 17:43:33,837 | INFO
+2026-07-15 17:43:34,054 | INFO
+2026-07-15 17:43:34,058 | INFO
+2026-07-15 17:43:34.057 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo dmesg -C > /dev/null 2>&1
+2026-07-15 17:43:34,159 | INFO
+2026-07-15 17:43:34.159 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:43:34,177 | INFO
+2026-07-15 17:43:34,403 | INFO
+2026-07-15 17:43:34,406 | INFO
+2026-07-15 17:43:34.406 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo truncate -s 0 /var/log/faillog
+2026-07-15 17:43:34,508 | INFO
+2026-07-15 17:43:34.508 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:43:34,528 | INFO
+2026-07-15 17:43:34,751 | INFO
+2026-07-15 17:43:34,755 | INFO
+2026-07-15 17:43:34.755 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo truncate -s 0 /var/log/dmesg
+2026-07-15 17:43:34,878 | INFO
+2026-07-15 17:43:34.878 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:43:34,888 | INFO
+2026-07-15 17:43:35,103 | INFO
+2026-07-15 17:43:35,105 | INFO
+2026-07-15 17:43:35.105 | INFO     | aux_os_w:run_cmd:49 - 命令下发：which vlc
+2026-07-15 17:43:35,186 | INFO
+2026-07-15 17:43:35.185 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+/usr/bin/vlc
+
+2026-07-15 17:43:35,193 | INFO
+2026-07-15 17:43:35.192 | INFO     | aux_os_w:ensure_vlc:159 - VLC 已安装
+2026-07-15 17:43:35,213 | INFO
+2026-07-15 17:43:35,442 | INFO
+2026-07-15 17:43:35,520 | INFO
+2026-07-15 17:43:35,911 | INFO
+2026-07-15 17:43:35.911 | INFO     | aux_os_w:upload_file_sftp:332 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/video_format/test_video.mp4 -> /tmp/test_video.mp4
+2026-07-15 17:43:35,912 | INFO
+2026-07-15 17:43:35,913 | INFO
+2026-07-15 17:43:35.913 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:36 - 请确保电脑已经国际/美标耳机，测试即将开始...
+2026-07-15 17:43:37,918 | INFO
+2026-07-15 17:43:37.917 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:40 - 第1次播放视频
+2026-07-15 17:43:37,937 | INFO
+2026-07-15 17:43:38,158 | INFO
+2026-07-15 17:43:38,160 | INFO
+2026-07-15 17:43:38.160 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-15 17:43:38,237 | INFO
+2026-07-15 17:43:38.237 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:43:38,240 | INFO
+2026-07-15 17:43:38.240 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长120秒...
+2026-07-15 17:43:38,253 | INFO
+2026-07-15 17:43:38,475 | INFO
+2026-07-15 17:43:38,479 | INFO
+2026-07-15 17:43:38.479 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
+2026-07-15 17:43:43,821 | INFO
+2026-07-15 17:43:43.821 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+[07-15 17:43:40:711053][MSG  ][INNO_VPU][inno_vpuapi.c:49              vpu_get_version] INNO VPU API Version: V1.1.2 GitBase:a9aaf5506a57c191aa3c233cb285ddb48859617a CompileTime:2024-06-21 16:52:23
+[0m
+2026-07-15 17:43:43,831 | INFO
+2026-07-15 17:43:43.831 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：5.59秒
+2026-07-15 17:43:43,838 | ERROR
+2026-07-15 17:43:43.838 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期120s，实际 5.59s，存在异常退出
+2026-07-15 17:43:43,860 | INFO
+2026-07-15 17:43:44,090 | INFO
+2026-07-15 17:43:44,095 | INFO
+2026-07-15 17:43:44.094 | INFO     | aux_os_w:run_cmd:49 - 命令下发：test -f /tmp/vlc_play.log
+2026-07-15 17:43:44,184 | INFO
+2026-07-15 17:43:44.183 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:43:44,200 | INFO
+2026-07-15 17:43:44,440 | INFO
+2026-07-15 17:43:44,446 | INFO
+2026-07-15 17:43:44.445 | INFO     | aux_os_w:run_cmd:49 - 命令下发：grep -E 'error|fail|rupt|unsupported' /tmp/vlc_play.log | grep -i 'decoder\|demux\|avcodec' || true
+2026-07-15 17:43:44,530 | INFO
+2026-07-15 17:43:44.529 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:43:44,535 | INFO
+2026-07-15 17:43:44.534 | INFO     | aux_os_w:check_video_log:515 - 视频 test_video.mp4 播放无解码错误
+2026-07-15 17:43:44,548 | INFO
+2026-07-15 17:43:44,783 | INFO
+2026-07-15 17:43:44,787 | INFO
+2026-07-15 17:43:44.787 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /sys/class/hwmon/hwmon0/temp1_input
+2026-07-15 17:43:44,868 | INFO
+2026-07-15 17:43:44.867 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+37750
+
+2026-07-15 17:43:44,875 | INFO
+2026-07-15 17:43:44.875 | INFO     | aux_os_w:check_gpu_temperature:476 - 当前 GPU 温度: 37.8°C
+2026-07-15 17:43:44,880 | INFO
+2026-07-15 17:43:44.879 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:49 - 第1次执行待机命令
+2026-07-15 17:43:44,895 | INFO
+2026-07-15 17:43:45,108 | INFO
+2026-07-15 17:43:45,113 | INFO
+2026-07-15 17:43:45.112 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:43:46,183 | INFO
+2026-07-15 17:43:46.183 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:43:51,192 | INFO
+2026-07-15 17:43:51.192 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:53 - 执行待机30s........
+2026-07-15 17:44:22,384 | INFO
+2026-07-15 17:44:22.384 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:55 - 等待唤醒5s.........
+2026-07-15 17:44:27,387 | INFO
+2026-07-15 17:44:27.387 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:40 - 第2次播放视频
+2026-07-15 17:44:27,403 | INFO
+2026-07-15 17:44:27,618 | INFO
+2026-07-15 17:44:27,622 | INFO
+2026-07-15 17:44:27.622 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-15 17:44:27,695 | INFO
+2026-07-15 17:44:27.694 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:44:27,703 | INFO
+2026-07-15 17:44:27.702 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长120秒...
+2026-07-15 17:44:27,718 | INFO
+2026-07-15 17:44:27,937 | INFO
+2026-07-15 17:44:27,941 | INFO
+2026-07-15 17:44:27.940 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
+2026-07-15 17:44:32,633 | INFO
+2026-07-15 17:44:32.633 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+[07-15 17:44:28:591152][MSG  ][INNO_VPU][inno_vpuapi.c:49              vpu_get_version] INNO VPU API Version: V1.1.2 GitBase:a9aaf5506a57c191aa3c233cb285ddb48859617a CompileTime:2024-06-21 16:52:23
+[0m
+2026-07-15 17:44:32,639 | INFO
+2026-07-15 17:44:32.639 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：4.93秒
+2026-07-15 17:44:32,645 | ERROR
+2026-07-15 17:44:32.644 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期120s，实际 4.93s，存在异常退出
+2026-07-15 17:44:32,664 | INFO
+2026-07-15 17:44:32,866 | INFO
+2026-07-15 17:44:32,869 | INFO
+2026-07-15 17:44:32.869 | INFO     | aux_os_w:run_cmd:49 - 命令下发：test -f /tmp/vlc_play.log
+2026-07-15 17:44:32,940 | INFO
+2026-07-15 17:44:32.940 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:44:32,954 | INFO
+2026-07-15 17:44:33,152 | INFO
+2026-07-15 17:44:33,156 | INFO
+2026-07-15 17:44:33.155 | INFO     | aux_os_w:run_cmd:49 - 命令下发：grep -E 'error|fail|rupt|unsupported' /tmp/vlc_play.log | grep -i 'decoder\|demux\|avcodec' || true
+2026-07-15 17:44:33,228 | INFO
+2026-07-15 17:44:33.228 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:44:33,235 | INFO
+2026-07-15 17:44:33.235 | INFO     | aux_os_w:check_video_log:515 - 视频 test_video.mp4 播放无解码错误
+2026-07-15 17:44:33,249 | INFO
+2026-07-15 17:44:33,445 | INFO
+2026-07-15 17:44:33,449 | INFO
+2026-07-15 17:44:33.449 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /sys/class/hwmon/hwmon0/temp1_input
+2026-07-15 17:44:33,524 | INFO
+2026-07-15 17:44:33.524 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+38125
+
+2026-07-15 17:44:33,530 | INFO
+2026-07-15 17:44:33.530 | INFO     | aux_os_w:check_gpu_temperature:476 - 当前 GPU 温度: 38.1°C
+2026-07-15 17:44:33,536 | INFO
+2026-07-15 17:44:33.535 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:49 - 第2次执行待机命令
+2026-07-15 17:44:33,554 | INFO
+2026-07-15 17:44:33,750 | INFO
+2026-07-15 17:44:33,754 | INFO
+2026-07-15 17:44:33.753 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:44:34,824 | INFO
+2026-07-15 17:44:34.824 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:44:40,480 | INFO
+2026-07-15 17:44:40.480 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:53 - 执行待机30s........
+2026-07-15 17:45:11,968 | INFO
+2026-07-15 17:45:11.967 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:55 - 等待唤醒5s.........
+2026-07-15 17:45:16,973 | INFO
+2026-07-15 17:45:16.973 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:40 - 第3次播放视频
+2026-07-15 17:45:16,984 | INFO
+2026-07-15 17:45:17,189 | INFO
+2026-07-15 17:45:17,190 | INFO
+2026-07-15 17:45:17.190 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-15 17:45:17,266 | INFO
+2026-07-15 17:45:17.266 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:45:17,269 | INFO
+2026-07-15 17:45:17.269 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长120秒...
+2026-07-15 17:45:17,279 | INFO
+2026-07-15 17:45:17,484 | INFO
+2026-07-15 17:45:17,488 | INFO
+2026-07-15 17:45:17.488 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
+2026-07-15 17:45:34,899 | INFO
+2026-07-15 17:45:34.898 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+[07-15 17:45:18:59007][MSG  ][INNO_VPU][inno_vpuapi.c:49              vpu_get_version] INNO VPU API Version: V1.1.2 GitBase:a9aaf5506a57c191aa3c233cb285ddb48859617a CompileTime:2024-06-21 16:52:23
+[0m
+2026-07-15 17:45:34,907 | INFO
+2026-07-15 17:45:34.907 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：17.64秒
+2026-07-15 17:45:34,913 | ERROR
+2026-07-15 17:45:34.913 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期120s，实际 17.64s，存在异常退出
+2026-07-15 17:45:34,935 | INFO
+2026-07-15 17:45:35,163 | INFO
+2026-07-15 17:45:35,167 | INFO
+2026-07-15 17:45:35.167 | INFO     | aux_os_w:run_cmd:49 - 命令下发：test -f /tmp/vlc_play.log
+2026-07-15 17:45:35,243 | INFO
+2026-07-15 17:45:35.242 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:45:35,258 | INFO
+2026-07-15 17:45:35,472 | INFO
+2026-07-15 17:45:35,476 | INFO
+2026-07-15 17:45:35.476 | INFO     | aux_os_w:run_cmd:49 - 命令下发：grep -E 'error|fail|rupt|unsupported' /tmp/vlc_play.log | grep -i 'decoder\|demux\|avcodec' || true
+2026-07-15 17:45:35,553 | INFO
+2026-07-15 17:45:35.552 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:45:35,560 | INFO
+2026-07-15 17:45:35.560 | INFO     | aux_os_w:check_video_log:515 - 视频 test_video.mp4 播放无解码错误
+2026-07-15 17:45:35,575 | INFO
+2026-07-15 17:45:35,793 | INFO
+2026-07-15 17:45:35,797 | INFO
+2026-07-15 17:45:35.797 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /sys/class/hwmon/hwmon0/temp1_input
+2026-07-15 17:45:35,870 | INFO
+2026-07-15 17:45:35.870 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+38125
+
+2026-07-15 17:45:35,877 | INFO
+2026-07-15 17:45:35.877 | INFO     | aux_os_w:check_gpu_temperature:476 - 当前 GPU 温度: 38.1°C
+2026-07-15 17:45:35,883 | INFO
+2026-07-15 17:45:35.883 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:49 - 第3次执行待机命令
+2026-07-15 17:45:35,900 | INFO
+2026-07-15 17:45:36,112 | INFO
+2026-07-15 17:45:36,115 | INFO
+2026-07-15 17:45:36.115 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:45:37,187 | INFO
+2026-07-15 17:45:37.186 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:45:42,195 | INFO
+2026-07-15 17:45:42.195 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:53 - 执行待机30s........
+2026-07-15 17:46:13,586 | INFO
+2026-07-15 17:46:13.586 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:55 - 等待唤醒5s.........
+2026-07-15 17:46:20,308 | INFO
+2026-07-15 17:46:20.307 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:40 - 第4次播放视频
+2026-07-15 17:46:20,325 | INFO
+2026-07-15 17:46:20,545 | INFO
+2026-07-15 17:46:20,549 | INFO
+2026-07-15 17:46:20.549 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-15 17:46:20,621 | INFO
+2026-07-15 17:46:20.620 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:46:20,625 | INFO
+2026-07-15 17:46:20.624 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长120秒...
+2026-07-15 17:46:20,639 | INFO
+2026-07-15 17:46:20,859 | INFO
+2026-07-15 17:46:20,863 | INFO
+2026-07-15 17:46:20.863 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
+2026-07-15 17:46:29,173 | INFO
+2026-07-15 17:46:29.173 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+[07-15 17:46:21:480100][MSG  ][INNO_VPU][inno_vpuapi.c:49              vpu_get_version] INNO VPU API Version: V1.1.2 GitBase:a9aaf5506a57c191aa3c233cb285ddb48859617a CompileTime:2024-06-21 16:52:23
+[0m
+2026-07-15 17:46:29,181 | INFO
+2026-07-15 17:46:29.180 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：8.55秒
+2026-07-15 17:46:29,187 | ERROR
+2026-07-15 17:46:29.186 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期120s，实际 8.55s，存在异常退出
+2026-07-15 17:46:29,209 | INFO
+2026-07-15 17:46:29,404 | INFO
+2026-07-15 17:46:29,407 | INFO
+2026-07-15 17:46:29.407 | INFO     | aux_os_w:run_cmd:49 - 命令下发：test -f /tmp/vlc_play.log
+2026-07-15 17:46:29,482 | INFO
+2026-07-15 17:46:29.482 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:46:29,497 | INFO
+2026-07-15 17:46:29,694 | INFO
+2026-07-15 17:46:29,698 | INFO
+2026-07-15 17:46:29.698 | INFO     | aux_os_w:run_cmd:49 - 命令下发：grep -E 'error|fail|rupt|unsupported' /tmp/vlc_play.log | grep -i 'decoder\|demux\|avcodec' || true
+2026-07-15 17:46:29,771 | INFO
+2026-07-15 17:46:29.770 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:46:29,777 | INFO
+2026-07-15 17:46:29.777 | INFO     | aux_os_w:check_video_log:515 - 视频 test_video.mp4 播放无解码错误
+2026-07-15 17:46:29,792 | INFO
+2026-07-15 17:46:29,987 | INFO
+2026-07-15 17:46:29,991 | INFO
+2026-07-15 17:46:29.991 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /sys/class/hwmon/hwmon0/temp1_input
+2026-07-15 17:46:30,064 | INFO
+2026-07-15 17:46:30.063 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+38250
+
+2026-07-15 17:46:30,070 | INFO
+2026-07-15 17:46:30.069 | INFO     | aux_os_w:check_gpu_temperature:476 - 当前 GPU 温度: 38.2°C
+2026-07-15 17:46:30,075 | INFO
+2026-07-15 17:46:30.075 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:49 - 第4次执行待机命令
+2026-07-15 17:46:30,088 | INFO
+2026-07-15 17:46:30,282 | INFO
+2026-07-15 17:46:30,286 | INFO
+2026-07-15 17:46:30.285 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:46:31,355 | INFO
+2026-07-15 17:46:31.355 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:46:36,363 | INFO
+2026-07-15 17:46:36.363 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:53 - 执行待机30s........
+2026-07-15 17:47:07,944 | INFO
+2026-07-15 17:47:07.943 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:55 - 等待唤醒5s.........
+2026-07-15 17:47:12,951 | INFO
+2026-07-15 17:47:12.950 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:40 - 第5次播放视频
+2026-07-15 17:47:12,964 | INFO
+2026-07-15 17:47:13,158 | INFO
+2026-07-15 17:47:13,162 | INFO
+2026-07-15 17:47:13.161 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-15 17:47:13,233 | INFO
+2026-07-15 17:47:13.233 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:47:13,239 | INFO
+2026-07-15 17:47:13.239 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长120秒...
+2026-07-15 17:47:13,278 | INFO
+2026-07-15 17:47:13,477 | INFO
+2026-07-15 17:47:13,481 | INFO
+2026-07-15 17:47:13.481 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
+2026-07-15 17:47:24,234 | INFO
+2026-07-15 17:47:24.234 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+[07-15 17:47:15:302112][MSG  ][INNO_VPU][inno_vpuapi.c:49              vpu_get_version] INNO VPU API Version: V1.1.2 GitBase:a9aaf5506a57c191aa3c233cb285ddb48859617a CompileTime:2024-06-21 16:52:23
+[0m
+2026-07-15 17:47:24,242 | INFO
+2026-07-15 17:47:24.241 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：11.00秒
+2026-07-15 17:47:24,249 | ERROR
+2026-07-15 17:47:24.248 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期120s，实际 11.00s，存在异常退出
+2026-07-15 17:47:24,268 | INFO
+2026-07-15 17:47:24,486 | INFO
+2026-07-15 17:47:24,491 | INFO
+2026-07-15 17:47:24.491 | INFO     | aux_os_w:run_cmd:49 - 命令下发：test -f /tmp/vlc_play.log
+2026-07-15 17:47:24,565 | INFO
+2026-07-15 17:47:24.565 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:47:24,580 | INFO
+2026-07-15 17:47:24,795 | INFO
+2026-07-15 17:47:24,800 | INFO
+2026-07-15 17:47:24.800 | INFO     | aux_os_w:run_cmd:49 - 命令下发：grep -E 'error|fail|rupt|unsupported' /tmp/vlc_play.log | grep -i 'decoder\|demux\|avcodec' || true
+2026-07-15 17:47:24,876 | INFO
+2026-07-15 17:47:24.875 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:47:24,884 | INFO
+2026-07-15 17:47:24.883 | INFO     | aux_os_w:check_video_log:515 - 视频 test_video.mp4 播放无解码错误
+2026-07-15 17:47:24,909 | INFO
+2026-07-15 17:47:25,122 | INFO
+2026-07-15 17:47:25,126 | INFO
+2026-07-15 17:47:25.126 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /sys/class/hwmon/hwmon0/temp1_input
+2026-07-15 17:47:25,202 | INFO
+2026-07-15 17:47:25.201 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+38500
+
+2026-07-15 17:47:25,208 | INFO
+2026-07-15 17:47:25.207 | INFO     | aux_os_w:check_gpu_temperature:476 - 当前 GPU 温度: 38.5°C
+2026-07-15 17:47:25,214 | INFO
+2026-07-15 17:47:25.213 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:49 - 第5次执行待机命令
+2026-07-15 17:47:25,240 | INFO
+2026-07-15 17:47:27,176 | INFO
+2026-07-15 17:47:27,180 | INFO
+2026-07-15 17:47:27.180 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:47:28,252 | INFO
+2026-07-15 17:47:28.251 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:47:33,260 | INFO
+2026-07-15 17:47:33.260 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:53 - 执行待机30s........
+2026-07-15 17:48:04,983 | INFO
+2026-07-15 17:48:04.983 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:55 - 等待唤醒5s.........
+2026-07-15 17:48:09,990 | INFO
+2026-07-15 17:48:09.989 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:40 - 第6次播放视频
+2026-07-15 17:48:10,016 | INFO
+2026-07-15 17:48:10,213 | INFO
+2026-07-15 17:48:10,217 | INFO
+2026-07-15 17:48:10.217 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-15 17:48:10,286 | INFO
+2026-07-15 17:48:10.285 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:48:10,289 | INFO
+2026-07-15 17:48:10.289 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长120秒...
+2026-07-15 17:48:10,302 | INFO
+2026-07-15 17:48:10,499 | INFO
+2026-07-15 17:48:10,503 | INFO
+2026-07-15 17:48:10.502 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
+2026-07-15 17:48:17,449 | INFO
+2026-07-15 17:48:17.449 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+[07-15 17:48:11:408261][MSG  ][INNO_VPU][inno_vpuapi.c:49              vpu_get_version] INNO VPU API Version: V1.1.2 GitBase:a9aaf5506a57c191aa3c233cb285ddb48859617a CompileTime:2024-06-21 16:52:23
+[0m
+2026-07-15 17:48:17,456 | INFO
+2026-07-15 17:48:17.456 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：7.16秒
+2026-07-15 17:48:17,461 | ERROR
+2026-07-15 17:48:17.461 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期120s，实际 7.16s，存在异常退出
+2026-07-15 17:48:17,482 | INFO
+2026-07-15 17:48:17,682 | INFO
+2026-07-15 17:48:17,685 | INFO
+2026-07-15 17:48:17.685 | INFO     | aux_os_w:run_cmd:49 - 命令下发：test -f /tmp/vlc_play.log
+2026-07-15 17:48:17,756 | INFO
+2026-07-15 17:48:17.756 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:48:17,773 | INFO
+2026-07-15 17:48:17,968 | INFO
+2026-07-15 17:48:17,973 | INFO
+2026-07-15 17:48:17.972 | INFO     | aux_os_w:run_cmd:49 - 命令下发：grep -E 'error|fail|rupt|unsupported' /tmp/vlc_play.log | grep -i 'decoder\|demux\|avcodec' || true
+2026-07-15 17:48:18,040 | INFO
+2026-07-15 17:48:18.039 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:48:18,047 | INFO
+2026-07-15 17:48:18.046 | INFO     | aux_os_w:check_video_log:515 - 视频 test_video.mp4 播放无解码错误
+2026-07-15 17:48:18,061 | INFO
+2026-07-15 17:48:18,258 | INFO
+2026-07-15 17:48:18,262 | INFO
+2026-07-15 17:48:18.262 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /sys/class/hwmon/hwmon0/temp1_input
+2026-07-15 17:48:18,337 | INFO
+2026-07-15 17:48:18.336 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+38500
+
+2026-07-15 17:48:18,340 | INFO
+2026-07-15 17:48:18.340 | INFO     | aux_os_w:check_gpu_temperature:476 - 当前 GPU 温度: 38.5°C
+2026-07-15 17:48:18,353 | INFO
+2026-07-15 17:48:18,543 | INFO
+2026-07-15 17:48:18,547 | INFO
+2026-07-15 17:48:18.546 | INFO     | aux_os_w:run_cmd:49 - 命令下发：pactl list sinks | grep -E 'Active Port|端口'
+2026-07-15 17:48:18,626 | INFO
+2026-07-15 17:48:18.625 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+	端口：
+	活动端口：[Out] HDMI0
+
+2026-07-15 17:48:18,632 | INFO
+2026-07-15 17:48:18.631 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:63 - 当前端口是端口：
+	活动端口：[out] hdmi0,未插入耳机
+2026-07-15 17:48:36,273 | INFO
+2026-07-15 17:48:36,483 | INFO
+2026-07-15 17:48:36,488 | INFO
+2026-07-15 17:48:36.487 | INFO     | aux_os_w:run_cmd:49 - 命令下发：pactl list sinks | grep -E 'Active Port|端口'
+2026-07-15 17:48:36,568 | INFO
+2026-07-15 17:48:36.568 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+	端口：
+	活动端口：[Out] HDMI0
+	端口：
+	活动端口：analog-output-speaker
+
+2026-07-15 17:48:36,585 | INFO
+2026-07-15 17:48:36,793 | INFO
+2026-07-15 17:48:36,797 | INFO
+2026-07-15 17:48:36.797 | INFO     | aux_os_w:run_cmd:49 - 命令下发：arecord -d 300 -f cd -t wav /tmp/test.wav
+2026-07-15 17:53:33,606 | INFO
+2026-07-15 17:53:33.605 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:53:33,626 | INFO
+2026-07-15 17:53:33,838 | INFO
+2026-07-15 17:53:33,843 | INFO
+2026-07-15 17:53:33.843 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test_wav.log
+2026-07-15 17:53:33,919 | INFO
+2026-07-15 17:53:33.918 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:53:33,925 | INFO
+2026-07-15 17:53:33.925 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长300秒...
+2026-07-15 17:53:33,942 | INFO
+2026-07-15 17:53:34,156 | INFO
+2026-07-15 17:53:34,160 | INFO
+2026-07-15 17:53:34.160 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/test_wav.log --verbose=2 --stop-time=300 --play-and-exit "/tmp/test.wav"
+2026-07-15 17:53:46,056 | INFO
+2026-07-15 17:53:46.056 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:53:46,062 | INFO
+2026-07-15 17:53:46.062 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：12.13秒
+2026-07-15 17:53:46,067 | ERROR
+2026-07-15 17:53:46.067 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期300s，实际 12.13s，存在异常退出
+2026-07-15 17:53:46,081 | INFO
+2026-07-15 17:53:46,275 | INFO
+2026-07-15 17:53:46,276 | INFO
+2026-07-15 17:53:46.276 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test.wav/*
+2026-07-15 17:53:46,351 | INFO
+2026-07-15 17:53:46.351 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:53:46,369 | INFO
+2026-07-15 17:53:46,567 | INFO
+2026-07-15 17:53:46,571 | INFO
+2026-07-15 17:53:46.571 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:53:47,640 | INFO
+2026-07-15 17:53:47.639 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:53:52,647 | INFO
+2026-07-15 17:53:52.647 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:82 - 执行待机30s........
+2026-07-15 17:54:24,350 | INFO
+2026-07-15 17:54:24.349 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:84 - 等待唤醒5s.........
+2026-07-15 17:54:29,361 | INFO
+2026-07-15 17:54:29,559 | INFO
+2026-07-15 17:54:29,562 | INFO
+2026-07-15 17:54:29.562 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test_wav.log
+2026-07-15 17:54:29,635 | INFO
+2026-07-15 17:54:29.635 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:54:29,642 | INFO
+2026-07-15 17:54:29.641 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长300秒...
+2026-07-15 17:54:29,657 | INFO
+2026-07-15 17:54:29,854 | INFO
+2026-07-15 17:54:29,857 | INFO
+2026-07-15 17:54:29.857 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/test_wav.log --verbose=2 --stop-time=300 --play-and-exit "/tmp/test.wav"
+2026-07-15 17:54:38,437 | INFO
+2026-07-15 17:54:38.437 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:54:38,444 | INFO
+2026-07-15 17:54:38.444 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：8.80秒
+2026-07-15 17:54:38,451 | ERROR
+2026-07-15 17:54:38.451 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期300s，实际 8.80s，存在异常退出
+2026-07-15 17:54:38,469 | INFO
+2026-07-15 17:54:38,663 | INFO
+2026-07-15 17:54:38,667 | INFO
+2026-07-15 17:54:38.667 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test.wav/*
+2026-07-15 17:54:38,739 | INFO
+2026-07-15 17:54:38.739 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:54:38,755 | INFO
+2026-07-15 17:54:38,948 | INFO
+2026-07-15 17:54:38,950 | INFO
+2026-07-15 17:54:38.950 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:54:40,021 | INFO
+2026-07-15 17:54:40.021 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:54:45,031 | INFO
+2026-07-15 17:54:45.030 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:82 - 执行待机30s........
+2026-07-15 17:55:16,659 | INFO
+2026-07-15 17:55:16.659 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:84 - 等待唤醒5s.........
+2026-07-15 17:55:23,167 | INFO
+2026-07-15 17:55:23,378 | INFO
+2026-07-15 17:55:23,382 | INFO
+2026-07-15 17:55:23.382 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test_wav.log
+2026-07-15 17:55:23,457 | INFO
+2026-07-15 17:55:23.457 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:55:23,464 | INFO
+2026-07-15 17:55:23.464 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长300秒...
+2026-07-15 17:55:23,478 | INFO
+2026-07-15 17:55:23,688 | INFO
+2026-07-15 17:55:23,690 | INFO
+2026-07-15 17:55:23.690 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/test_wav.log --verbose=2 --stop-time=300 --play-and-exit "/tmp/test.wav"
+2026-07-15 17:55:31,535 | INFO
+2026-07-15 17:55:31.534 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:55:31,542 | INFO
+2026-07-15 17:55:31.541 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：8.07秒
+2026-07-15 17:55:31,548 | ERROR
+2026-07-15 17:55:31.548 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期300s，实际 8.07s，存在异常退出
+2026-07-15 17:55:31,567 | INFO
+2026-07-15 17:55:31,764 | INFO
+2026-07-15 17:55:31,768 | INFO
+2026-07-15 17:55:31.768 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test.wav/*
+2026-07-15 17:55:31,845 | INFO
+2026-07-15 17:55:31.844 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:55:31,860 | INFO
+2026-07-15 17:55:32,059 | INFO
+2026-07-15 17:55:32,064 | INFO
+2026-07-15 17:55:32.063 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:55:33,133 | INFO
+2026-07-15 17:55:33.133 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:55:38,186 | INFO
+2026-07-15 17:55:38.186 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:82 - 执行待机30s........
+2026-07-15 17:56:09,606 | INFO
+2026-07-15 17:56:09.606 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:84 - 等待唤醒5s.........
+2026-07-15 17:56:14,625 | INFO
+2026-07-15 17:56:14,829 | INFO
+2026-07-15 17:56:14,831 | INFO
+2026-07-15 17:56:14.830 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test_wav.log
+2026-07-15 17:56:14,905 | INFO
+2026-07-15 17:56:14.905 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:56:14,912 | INFO
+2026-07-15 17:56:14.912 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长300秒...
+2026-07-15 17:56:14,927 | INFO
+2026-07-15 17:56:15,130 | INFO
+2026-07-15 17:56:15,135 | INFO
+2026-07-15 17:56:15.134 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/test_wav.log --verbose=2 --stop-time=300 --play-and-exit "/tmp/test.wav"
+2026-07-15 17:56:45,133 | INFO
+2026-07-15 17:56:45.133 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:56:45,138 | INFO
+2026-07-15 17:56:45.137 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：30.22秒
+2026-07-15 17:56:45,143 | ERROR
+2026-07-15 17:56:45.142 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期300s，实际 30.22s，存在异常退出
+2026-07-15 17:56:45,160 | INFO
+2026-07-15 17:56:45,365 | INFO
+2026-07-15 17:56:45,367 | INFO
+2026-07-15 17:56:45.367 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test.wav/*
+2026-07-15 17:56:45,445 | INFO
+2026-07-15 17:56:45.445 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:56:45,461 | INFO
+2026-07-15 17:56:45,668 | INFO
+2026-07-15 17:56:45,672 | INFO
+2026-07-15 17:56:45.672 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:56:46,742 | INFO
+2026-07-15 17:56:46.742 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:56:51,751 | INFO
+2026-07-15 17:56:51.751 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:82 - 执行待机30s........
+2026-07-15 17:57:23,212 | INFO
+2026-07-15 17:57:23.212 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:84 - 等待唤醒5s.........
+2026-07-15 17:57:28,228 | INFO
+2026-07-15 17:57:28,432 | INFO
+2026-07-15 17:57:28,437 | INFO
+2026-07-15 17:57:28.437 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test_wav.log
+2026-07-15 17:57:28,506 | INFO
+2026-07-15 17:57:28.506 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:57:28,508 | INFO
+2026-07-15 17:57:28.508 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长300秒...
+2026-07-15 17:57:28,518 | INFO
+2026-07-15 17:57:28,725 | INFO
+2026-07-15 17:57:28,729 | INFO
+2026-07-15 17:57:28.728 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/test_wav.log --verbose=2 --stop-time=300 --play-and-exit "/tmp/test.wav"
+2026-07-15 17:57:40,601 | INFO
+2026-07-15 17:57:40.601 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:57:40,609 | INFO
+2026-07-15 17:57:40.609 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：12.10秒
+2026-07-15 17:57:40,616 | ERROR
+2026-07-15 17:57:40.615 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期300s，实际 12.10s，存在异常退出
+2026-07-15 17:57:40,635 | INFO
+2026-07-15 17:57:40,839 | INFO
+2026-07-15 17:57:40,844 | INFO
+2026-07-15 17:57:40.843 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test.wav/*
+2026-07-15 17:57:40,911 | INFO
+2026-07-15 17:57:40.911 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:57:40,919 | INFO
+2026-07-15 17:57:41,120 | INFO
+2026-07-15 17:57:41,124 | INFO
+2026-07-15 17:57:41.124 | INFO     | aux_os_w:run_cmd:49 - 命令下发：sudo rtcwake -m mem -s 30
+2026-07-15 17:57:42,199 | INFO
+2026-07-15 17:57:42.198 | INFO     | aux_os_w:run_cmd:56 - 异步命令已发送，不等待执行结果
+2026-07-15 17:57:47,208 | INFO
+2026-07-15 17:57:47.207 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:82 - 执行待机30s........
+2026-07-15 17:58:18,739 | INFO
+2026-07-15 17:58:18.738 | INFO     | test_cases.bj_compatibility.os.test_os_international_earphone:test_os_international_earphone:84 - 等待唤醒5s.........
+2026-07-15 17:58:23,754 | INFO
+2026-07-15 17:58:23,946 | INFO
+2026-07-15 17:58:23,948 | INFO
+2026-07-15 17:58:23.948 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test_wav.log
+2026-07-15 17:58:24,019 | INFO
+2026-07-15 17:58:24.019 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:58:24,021 | INFO
+2026-07-15 17:58:24.021 | INFO     | aux_os_w:vlc_video_play:528 - 开始远程播放视频，预期时长300秒...
+2026-07-15 17:58:24,032 | INFO
+2026-07-15 17:58:24,232 | INFO
+2026-07-15 17:58:24,236 | INFO
+2026-07-15 17:58:24.236 | INFO     | aux_os_w:run_cmd:49 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/test_wav.log --verbose=2 --stop-time=300 --play-and-exit "/tmp/test.wav"
+2026-07-15 17:58:42,807 | INFO
+2026-07-15 17:58:42.806 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:58:42,814 | INFO
+2026-07-15 17:58:42.814 | INFO     | aux_os_w:vlc_video_play:533 - 播放结束，总耗时：18.79秒
+2026-07-15 17:58:42,821 | ERROR
+2026-07-15 17:58:42.820 | ERROR    | aux_os_w:vlc_video_play:535 - 播放时长偏差过大，预期300s，实际 18.79s，存在异常退出
+2026-07-15 17:58:42,843 | INFO
+2026-07-15 17:58:43,045 | INFO
+2026-07-15 17:58:43,050 | INFO
+2026-07-15 17:58:43.049 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/test.wav/*
+2026-07-15 17:58:43,123 | INFO
+2026-07-15 17:58:43.123 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:58:43,138 | INFO
+2026-07-15 17:58:43,340 | INFO
+2026-07-15 17:58:43,345 | INFO
+2026-07-15 17:58:43.345 | INFO     | aux_os_w:run_cmd:49 - 命令下发：mkdir -p /tmp/log_check
+2026-07-15 17:58:43,421 | INFO
+2026-07-15 17:58:43.420 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:58:43,438 | INFO
+2026-07-15 17:58:43,654 | INFO
+2026-07-15 17:58:43,732 | INFO
+2026-07-15 17:58:43,776 | INFO
+2026-07-15 17:58:43.776 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/config.cfg -> /tmp/log_check/config.cfg
+2026-07-15 17:58:43,791 | INFO
+2026-07-15 17:58:43.791 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/keyword.txt -> /tmp/log_check/keyword.txt
+2026-07-15 17:58:43,801 | INFO
+2026-07-15 17:58:43.801 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/log-exception-check.py -> /tmp/log_check/log-exception-check.py
+2026-07-15 17:58:43,807 | INFO
+2026-07-15 17:58:43.807 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/log_checker.py -> /tmp/log_check/log_checker.py
+2026-07-15 17:58:43,816 | INFO
+2026-07-15 17:58:43.815 | INFO     | aux_os_w:upload_dir_sftp:387 - 上传成功: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1/run.sh -> /tmp/log_check/run.sh
+2026-07-15 17:58:43,817 | INFO
+2026-07-15 17:58:43.816 | INFO     | aux_os_w:upload_dir_sftp:391 - 目录上传完成: /mnt/c/Users/Admin1/Desktop/os_7.15/pc/test_cases/bj_compatibility/os/log_check1.1 -> /tmp/log_check
+2026-07-15 17:58:43,818 | INFO
+2026-07-15 17:58:43,827 | INFO
+2026-07-15 17:58:44,031 | INFO
+2026-07-15 17:58:44,036 | INFO
+2026-07-15 17:58:44.035 | INFO     | aux_os_w:run_cmd:49 - 命令下发：rm -f /tmp/log_check/检测结果.log
+2026-07-15 17:58:45,538 | INFO
+2026-07-15 17:58:45.538 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:58:45,553 | INFO
+2026-07-15 17:58:45,754 | INFO
+2026-07-15 17:58:45,759 | INFO
+2026-07-15 17:58:45.758 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cd /tmp/log_check && sudo python3 log_checker.py
+2026-07-15 17:58:45,882 | INFO
+2026-07-15 17:58:45.882 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+2026/07/15  17:58:46 关键词加载完成，共 34 个条目。
+2026/07/15  17:58:46 检测结果将写入: 检测结果.log
+2026/07/15  17:58:46 正在检测: /var/log/dmesg
+2026/07/15  17:58:46   -> 未发现异常
+2026/07/15  17:58:46 正在检测: /var/log/faillog
+2026/07/15  17:58:46   -> 未发现异常
+2026/07/15  17:58:46 检测完成，未发现任何异常。
+
+2026-07-15 17:58:45,898 | INFO
+2026-07-15 17:58:46,107 | INFO
+2026-07-15 17:58:46,111 | INFO
+2026-07-15 17:58:46.111 | INFO     | aux_os_w:run_cmd:49 - 命令下发：cat /tmp/log_check/检测结果.log 2>/dev/null
+2026-07-15 17:58:46,186 | INFO
+2026-07-15 17:58:46.186 | INFO     | aux_os_w:run_cmd:64 - 命令回显：result：
+
+2026-07-15 17:58:46,195 | INFO
+2026-07-15 17:58:46.194 | SUCCESS  | aux_os_w:final_log_check_write_journallog:420 - 日志检测没有异常

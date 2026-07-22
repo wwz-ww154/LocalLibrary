@@ -1,0 +1,250 @@
+2026-07-07 15:12:56,245 | INFO
+2026-07-07 15:12:56,448 | INFO
+2026-07-07 15:12:56,449 | INFO
+2026-07-07 15:12:56.448 | INFO     | aux_os_w:run_cmd:43 - 命令下发：gcc -v 2>&1
+2026-07-07 15:12:56,526 | INFO
+2026-07-07 15:12:56.525 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Uos 8.3.0.13-deepin1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 8.3.0 (Uos 8.3.0.13-deepin1) 
+
+2026-07-07 15:12:56,526 | INFO
+2026-07-07 15:12:56.526 | INFO     | aux_os_w:get_os_type:85 - 当前待测机为Uos系统
+2026-07-07 15:12:56,552 | INFO
+2026-07-07 15:12:56,756 | INFO
+2026-07-07 15:12:56,756 | INFO
+2026-07-07 15:12:56.756 | INFO     | aux_os_w:run_cmd:43 - 命令下发：sudo dmesg -C > /dev/null 2>&1
+2026-07-07 15:12:56,848 | INFO
+2026-07-07 15:12:56.847 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:12:56,869 | INFO
+2026-07-07 15:12:57,037 | INFO
+2026-07-07 15:12:57,037 | INFO
+2026-07-07 15:12:57.037 | INFO     | aux_os_w:run_cmd:43 - 命令下发：sudo truncate -s 0 /var/log/faillog
+2026-07-07 15:12:57,140 | INFO
+2026-07-07 15:12:57.140 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:12:57,150 | INFO
+2026-07-07 15:12:57,309 | INFO
+2026-07-07 15:12:57,310 | INFO
+2026-07-07 15:12:57.309 | INFO     | aux_os_w:run_cmd:43 - 命令下发：sudo truncate -s 0 /var/log/dmesg
+2026-07-07 15:12:57,416 | INFO
+2026-07-07 15:12:57.416 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:12:57,437 | INFO
+2026-07-07 15:12:57,641 | INFO
+2026-07-07 15:12:57,642 | INFO
+2026-07-07 15:12:57.641 | INFO     | aux_os_w:run_cmd:43 - 命令下发：which xdotool
+2026-07-07 15:12:57,716 | INFO
+2026-07-07 15:12:57.715 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/usr/bin/xdotool
+
+2026-07-07 15:12:57,716 | INFO
+2026-07-07 15:12:57.716 | INFO     | aux_os_w:ensure_xdotool:211 - xdotool 已安装
+2026-07-07 15:12:57,743 | INFO
+2026-07-07 15:12:57,892 | INFO
+2026-07-07 15:12:57,893 | INFO
+2026-07-07 15:12:57.893 | INFO     | aux_os_w:run_cmd:43 - 命令下发：uname -m
+2026-07-07 15:12:57,978 | INFO
+2026-07-07 15:12:57.978 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+x86_64
+
+2026-07-07 15:12:57,980 | INFO
+2026-07-07 15:12:57.979 | INFO     | aux_os_w:get_arch_type:122 - 当前待测机架构为 x86
+2026-07-07 15:12:58,001 | INFO
+2026-07-07 15:12:58,208 | INFO
+2026-07-07 15:12:58,209 | INFO
+2026-07-07 15:12:58.209 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; nohup browser --start-fullscreen https://linux.weixin.qq.com > /dev/null 2>&1 &
+2026-07-07 15:12:58,292 | INFO
+2026-07-07 15:12:58.292 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:00,318 | INFO
+2026-07-07 15:13:00,482 | INFO
+2026-07-07 15:13:00,483 | INFO
+2026-07-07 15:13:00.482 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /home/inspur/Downloads/WeChat*.deb
+2026-07-07 15:13:00,632 | INFO
+2026-07-07 15:13:00.632 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:00,642 | INFO
+2026-07-07 15:13:00,808 | INFO
+2026-07-07 15:13:00,809 | INFO
+2026-07-07 15:13:00.808 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; scrot /tmp/screenshot_temp.png
+2026-07-07 15:13:01,314 | INFO
+2026-07-07 15:13:01.314 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:01,327 | INFO
+2026-07-07 15:13:01,531 | INFO
+2026-07-07 15:13:01,605 | INFO
+2026-07-07 15:13:01,678 | INFO
+2026-07-07 15:13:02,006 | INFO
+2026-07-07 15:13:02.006 | INFO     | test_cases.bj_compatibility.os.test_os_browser:find_image_on_screen:125 - 模板匹配度: 0.948
+2026-07-07 15:13:02,008 | INFO
+2026-07-07 15:13:02.008 | INFO     | test_cases.bj_compatibility.os.test_os_browser:wait_and_click_image:184 - 找到目标，坐标: (748, 462)
+2026-07-07 15:13:02,026 | INFO
+2026-07-07 15:13:02,188 | INFO
+2026-07-07 15:13:02,189 | INFO
+2026-07-07 15:13:02.189 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool mousemove 748 462 click 1
+2026-07-07 15:13:02,382 | INFO
+2026-07-07 15:13:02.381 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:02,410 | INFO
+2026-07-07 15:13:02,615 | INFO
+2026-07-07 15:13:02,616 | INFO
+2026-07-07 15:13:02.616 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /tmp/screenshot_temp.png
+2026-07-07 15:13:02,688 | INFO
+2026-07-07 15:13:02.688 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:04,700 | INFO
+2026-07-07 15:13:04,905 | INFO
+2026-07-07 15:13:04,905 | INFO
+2026-07-07 15:13:04.905 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; scrot /tmp/screenshot_temp.png
+2026-07-07 15:13:05,420 | INFO
+2026-07-07 15:13:05.420 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:05,440 | INFO
+2026-07-07 15:13:05,653 | INFO
+2026-07-07 15:13:05,734 | INFO
+2026-07-07 15:13:05,839 | INFO
+2026-07-07 15:13:06,167 | INFO
+2026-07-07 15:13:06.167 | INFO     | test_cases.bj_compatibility.os.test_os_browser:find_image_on_screen:125 - 模板匹配度: 1.000
+2026-07-07 15:13:06,169 | INFO
+2026-07-07 15:13:06.169 | INFO     | test_cases.bj_compatibility.os.test_os_browser:wait_and_click_image:184 - 找到目标，坐标: (718, 535)
+2026-07-07 15:13:06,184 | INFO
+2026-07-07 15:13:06,346 | INFO
+2026-07-07 15:13:06,347 | INFO
+2026-07-07 15:13:06.347 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool mousemove 718 535 click 1
+2026-07-07 15:13:06,535 | INFO
+2026-07-07 15:13:06.535 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:06,547 | INFO
+2026-07-07 15:13:06,719 | INFO
+2026-07-07 15:13:06,720 | INFO
+2026-07-07 15:13:06.719 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /tmp/screenshot_temp.png
+2026-07-07 15:13:06,803 | INFO
+2026-07-07 15:13:06.803 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:08,827 | INFO
+2026-07-07 15:13:09,031 | INFO
+2026-07-07 15:13:09,032 | INFO
+2026-07-07 15:13:09.032 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; scrot /tmp/screenshot_temp.png
+2026-07-07 15:13:09,542 | INFO
+2026-07-07 15:13:09.541 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:09,560 | INFO
+2026-07-07 15:13:09,767 | INFO
+2026-07-07 15:13:09,841 | INFO
+2026-07-07 15:13:09,937 | INFO
+2026-07-07 15:13:10,268 | INFO
+2026-07-07 15:13:10.267 | INFO     | test_cases.bj_compatibility.os.test_os_browser:find_image_on_screen:125 - 模板匹配度: 1.000
+2026-07-07 15:13:10,270 | INFO
+2026-07-07 15:13:10.269 | INFO     | test_cases.bj_compatibility.os.test_os_browser:wait_and_click_image:184 - 找到目标，坐标: (1042, 617)
+2026-07-07 15:13:10,294 | INFO
+2026-07-07 15:13:10,456 | INFO
+2026-07-07 15:13:10,457 | INFO
+2026-07-07 15:13:10.456 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool mousemove 1042 617 click 1
+2026-07-07 15:13:10,647 | INFO
+2026-07-07 15:13:10.647 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:10,674 | INFO
+2026-07-07 15:13:10,835 | INFO
+2026-07-07 15:13:10,836 | INFO
+2026-07-07 15:13:10.836 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /tmp/screenshot_temp.png
+2026-07-07 15:13:10,921 | INFO
+2026-07-07 15:13:10.921 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:10,922 | INFO
+2026-07-07 15:13:10.922 | INFO     | test_cases.bj_compatibility.os.test_os_browser:test_os_browser:67 - 等待下载文件到 /home/inspur/Downloads
+2026-07-07 15:13:15,947 | INFO
+2026-07-07 15:13:16,109 | INFO
+2026-07-07 15:13:16,109 | INFO
+2026-07-07 15:13:16.109 | INFO     | aux_os_w:run_cmd:43 - 命令下发：ls /home/inspur/Downloads/WeChat*.deb 2>/dev/null
+2026-07-07 15:13:16,193 | INFO
+2026-07-07 15:13:16.193 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:16,193 | ERROR
+2026-07-07 15:13:16.193 | ERROR    | aux_os_w:run_cmd:52 - ls /home/inspur/Downloads/WeChat*.deb 2>/dev/null命令执行失败，exit_code=2, stderr=
+2026-07-07 15:13:16,194 | INFO
+2026-07-07 15:13:16.194 | INFO     | test_cases.bj_compatibility.os.test_os_browser:test_os_browser:83 - 等待中... (0s)
+2026-07-07 15:13:21,205 | INFO
+2026-07-07 15:13:21,373 | INFO
+2026-07-07 15:13:21,374 | INFO
+2026-07-07 15:13:21.374 | INFO     | aux_os_w:run_cmd:43 - 命令下发：ls /home/inspur/Downloads/WeChat*.deb 2>/dev/null
+2026-07-07 15:13:21,447 | INFO
+2026-07-07 15:13:21.447 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+/home/inspur/Downloads/WeChatLinux_x86_64.deb
+
+2026-07-07 15:13:21,448 | INFO
+2026-07-07 15:13:21.448 | INFO     | test_cases.bj_compatibility.os.test_os_browser:test_os_browser:77 - 下载完成，文件: /home/inspur/Downloads/WeChatLinux_x86_64.deb
+2026-07-07 15:13:21,474 | INFO
+2026-07-07 15:13:21,676 | INFO
+2026-07-07 15:13:21,676 | INFO
+2026-07-07 15:13:21.676 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /tmp/screenshot_temp.png
+2026-07-07 15:13:21,757 | INFO
+2026-07-07 15:13:21.757 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:21,783 | INFO
+2026-07-07 15:13:21,994 | INFO
+2026-07-07 15:13:21,995 | INFO
+2026-07-07 15:13:21.994 | INFO     | aux_os_w:run_cmd:43 - 命令下发：export DISPLAY=:0; xdotool key Alt+F4
+2026-07-07 15:13:22,105 | INFO
+2026-07-07 15:13:22.105 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:22,134 | INFO
+2026-07-07 15:13:22,341 | INFO
+2026-07-07 15:13:22,341 | INFO
+2026-07-07 15:13:22.341 | INFO     | aux_os_w:run_cmd:43 - 命令下发：mkdir -p /tmp/log_check
+2026-07-07 15:13:22,418 | INFO
+2026-07-07 15:13:22.418 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:22,440 | INFO
+2026-07-07 15:13:22,646 | INFO
+2026-07-07 15:13:22,717 | INFO
+2026-07-07 15:13:22,722 | INFO
+2026-07-07 15:13:22.722 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\config.cfg -> /tmp/log_check/config.cfg
+2026-07-07 15:13:22,726 | INFO
+2026-07-07 15:13:22.726 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\keyword.txt -> /tmp/log_check/keyword.txt
+2026-07-07 15:13:22,729 | INFO
+2026-07-07 15:13:22.729 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\log-exception-check.py -> /tmp/log_check/log-exception-check.py
+2026-07-07 15:13:22,733 | INFO
+2026-07-07 15:13:22.733 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\log_checker.py -> /tmp/log_check/log_checker.py
+2026-07-07 15:13:22,736 | INFO
+2026-07-07 15:13:22.736 | INFO     | aux_os_w:upload_dir_sftp:397 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\run.sh -> /tmp/log_check/run.sh
+2026-07-07 15:13:22,736 | INFO
+2026-07-07 15:13:22.736 | INFO     | aux_os_w:upload_dir_sftp:401 - 目录上传完成: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1 -> /tmp/log_check
+2026-07-07 15:13:22,737 | INFO
+2026-07-07 15:13:22,746 | INFO
+2026-07-07 15:13:22,910 | INFO
+2026-07-07 15:13:22,911 | INFO
+2026-07-07 15:13:22.911 | INFO     | aux_os_w:run_cmd:43 - 命令下发：rm -f /tmp/log_check/检测结果.log
+2026-07-07 15:13:22,991 | INFO
+2026-07-07 15:13:22.991 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:23,002 | INFO
+2026-07-07 15:13:23,210 | INFO
+2026-07-07 15:13:23,211 | INFO
+2026-07-07 15:13:23.211 | INFO     | aux_os_w:run_cmd:43 - 命令下发：cd /tmp/log_check && sudo python3 log_checker.py
+2026-07-07 15:13:23,334 | INFO
+2026-07-07 15:13:23.333 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+2026/07/07  15:13:23 关键词加载完成，共 34 个条目。
+2026/07/07  15:13:23 检测结果将写入: 检测结果.log
+2026/07/07  15:13:23 正在检测: /var/log/dmesg
+2026/07/07  15:13:23   -> 未发现异常
+2026/07/07  15:13:23 正在检测: /var/log/faillog
+2026/07/07  15:13:23   -> 未发现异常
+2026/07/07  15:13:23 检测完成，未发现任何异常。
+
+2026-07-07 15:13:23,356 | INFO
+2026-07-07 15:13:23,563 | INFO
+2026-07-07 15:13:23,564 | INFO
+2026-07-07 15:13:23.563 | INFO     | aux_os_w:run_cmd:43 - 命令下发：cat /tmp/log_check/检测结果.log 2>/dev/null
+2026-07-07 15:13:23,638 | INFO
+2026-07-07 15:13:23.638 | INFO     | aux_os_w:run_cmd:50 - 命令回显：result：
+
+2026-07-07 15:13:23,639 | INFO
+2026-07-07 15:13:23.639 | SUCCESS  | aux_os_w:final_log_check_write_journallog:430 - 日志检测没有异常

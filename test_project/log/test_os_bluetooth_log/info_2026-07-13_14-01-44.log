@@ -1,0 +1,104 @@
+2026-07-13 14:01:44,486 | INFO
+2026-07-13 14:01:44,583 | INFO
+2026-07-13 14:01:44,583 | INFO
+2026-07-13 14:01:44,584 | INFO
+2026-07-13 14:01:44.583 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo dmesg -C > /dev/null 2>&1
+2026-07-13 14:01:44,688 | INFO
+2026-07-13 14:01:44.687 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:44,715 | INFO
+2026-07-13 14:01:44,752 | INFO
+2026-07-13 14:01:44,752 | INFO
+2026-07-13 14:01:44,753 | INFO
+2026-07-13 14:01:44.753 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo truncate -s 0 /var/log/faillog
+2026-07-13 14:01:44,855 | INFO
+2026-07-13 14:01:44.855 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:44,881 | INFO
+2026-07-13 14:01:44,937 | INFO
+2026-07-13 14:01:44,937 | INFO
+2026-07-13 14:01:44,938 | INFO
+2026-07-13 14:01:44.938 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo truncate -s 0 /var/log/dmesg
+2026-07-13 14:01:45,035 | INFO
+2026-07-13 14:01:45.034 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:45,035 | INFO
+2026-07-13 14:01:45.035 | INFO     | test_cases.bj_compatibility.os.test_os_bluetooth:start_bluetooth_service:56 - 启动蓝牙服务...
+2026-07-13 14:01:45,061 | INFO
+2026-07-13 14:01:45,110 | INFO
+2026-07-13 14:01:45,111 | INFO
+2026-07-13 14:01:45,111 | INFO
+2026-07-13 14:01:45.111 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo systemctl start bluetooth
+2026-07-13 14:01:45,212 | INFO
+2026-07-13 14:01:45.212 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:47,215 | INFO
+2026-07-13 14:01:47.214 | INFO     | test_cases.bj_compatibility.os.test_os_bluetooth:start_bluetooth_service:61 - 蓝牙上电...
+2026-07-13 14:01:47,232 | INFO
+2026-07-13 14:01:47,327 | INFO
+2026-07-13 14:01:47,328 | INFO
+2026-07-13 14:01:47,329 | INFO
+2026-07-13 14:01:47.328 | INFO     | aux_os_w:run_cmd:50 - 命令下发：bluetoothctl power on
+2026-07-13 14:01:47,428 | INFO
+2026-07-13 14:01:47.428 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:47,429 | ERROR
+2026-07-13 14:01:47.429 | ERROR    | aux_os_w:run_cmd:67 - bluetoothctl power on命令执行失败，exit_code=1, stderr=
+2026-07-13 14:01:47,446 | INFO
+2026-07-13 14:01:47,477 | INFO
+2026-07-13 14:01:47,477 | INFO
+2026-07-13 14:01:47,477 | INFO
+2026-07-13 14:01:47.477 | INFO     | aux_os_w:run_cmd:50 - 命令下发：mkdir -p /tmp/log_check
+2026-07-13 14:01:47,560 | INFO
+2026-07-13 14:01:47.560 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:47,584 | INFO
+2026-07-13 14:01:47,659 | INFO
+2026-07-13 14:01:47,660 | INFO
+2026-07-13 14:01:47,758 | INFO
+2026-07-13 14:01:47,773 | INFO
+2026-07-13 14:01:47.772 | INFO     | aux_os_w:upload_dir_sftp:388 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\config.cfg -> /tmp/log_check/config.cfg
+2026-07-13 14:01:47,782 | INFO
+2026-07-13 14:01:47.782 | INFO     | aux_os_w:upload_dir_sftp:388 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\keyword.txt -> /tmp/log_check/keyword.txt
+2026-07-13 14:01:47,792 | INFO
+2026-07-13 14:01:47.792 | INFO     | aux_os_w:upload_dir_sftp:388 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\log-exception-check.py -> /tmp/log_check/log-exception-check.py
+2026-07-13 14:01:47,800 | INFO
+2026-07-13 14:01:47.800 | INFO     | aux_os_w:upload_dir_sftp:388 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\log_checker.py -> /tmp/log_check/log_checker.py
+2026-07-13 14:01:47,805 | INFO
+2026-07-13 14:01:47.805 | INFO     | aux_os_w:upload_dir_sftp:388 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1\run.sh -> /tmp/log_check/run.sh
+2026-07-13 14:01:47,806 | INFO
+2026-07-13 14:01:47.806 | INFO     | aux_os_w:upload_dir_sftp:392 - 目录上传完成: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\log_check1.1 -> /tmp/log_check
+2026-07-13 14:01:47,807 | INFO
+2026-07-13 14:01:47,824 | INFO
+2026-07-13 14:01:47,856 | INFO
+2026-07-13 14:01:47,856 | INFO
+2026-07-13 14:01:47,856 | INFO
+2026-07-13 14:01:47.856 | INFO     | aux_os_w:run_cmd:50 - 命令下发：rm -f /tmp/log_check/检测结果.log
+2026-07-13 14:01:47,937 | INFO
+2026-07-13 14:01:47.937 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:47,962 | INFO
+2026-07-13 14:01:48,015 | INFO
+2026-07-13 14:01:48,016 | INFO
+2026-07-13 14:01:48,016 | INFO
+2026-07-13 14:01:48.016 | INFO     | aux_os_w:run_cmd:50 - 命令下发：cd /tmp/log_check && sudo python3 log_checker.py
+2026-07-13 14:01:48,200 | INFO
+2026-07-13 14:01:48.200 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+2026/07/13  14:01:57 关键词加载完成，共 34 个条目。
+2026/07/13  14:01:57 检测结果将写入: 检测结果.log
+2026/07/13  14:01:57 正在检测: /var/log/dmesg
+2026/07/13  14:01:57   -> 未发现异常
+2026/07/13  14:01:57 正在检测: /var/log/faillog
+2026/07/13  14:01:57   -> 未发现异常
+2026/07/13  14:01:57 检测完成，未发现任何异常。
+
+2026-07-13 14:01:48,222 | INFO
+2026-07-13 14:01:48,281 | INFO
+2026-07-13 14:01:48,281 | INFO
+2026-07-13 14:01:48,282 | INFO
+2026-07-13 14:01:48.282 | INFO     | aux_os_w:run_cmd:50 - 命令下发：cat /tmp/log_check/检测结果.log 2>/dev/null
+2026-07-13 14:01:48,368 | INFO
+2026-07-13 14:01:48.368 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-13 14:01:48,370 | INFO
+2026-07-13 14:01:48.370 | SUCCESS  | aux_os_w:final_log_check_write_journallog:421 - 日志检测没有异常

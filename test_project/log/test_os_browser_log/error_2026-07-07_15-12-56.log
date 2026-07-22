@@ -1,0 +1,2 @@
+2026-07-07 15:13:16,193 | ERROR
+2026-07-07 15:13:16.193 | ERROR    | aux_os_w:run_cmd:52 - ls /home/inspur/Downloads/WeChat*.deb 2>/dev/null命令执行失败，exit_code=2, stderr=

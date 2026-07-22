@@ -1,0 +1,2 @@
+2026-07-13 14:01:47,429 | ERROR
+2026-07-13 14:01:47.429 | ERROR    | aux_os_w:run_cmd:67 - bluetoothctl power on命令执行失败，exit_code=1, stderr=

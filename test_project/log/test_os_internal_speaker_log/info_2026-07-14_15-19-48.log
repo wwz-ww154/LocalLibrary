@@ -1,0 +1,52 @@
+2026-07-14 15:19:48,457 | INFO
+2026-07-14 15:19:48,615 | INFO
+2026-07-14 15:19:48,616 | INFO
+2026-07-14 15:19:48.616 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo dmesg -C > /dev/null 2>&1
+2026-07-14 15:19:48,717 | INFO
+2026-07-14 15:19:48.717 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-14 15:19:48,734 | INFO
+2026-07-14 15:19:48,907 | INFO
+2026-07-14 15:19:48,907 | INFO
+2026-07-14 15:19:48.907 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo truncate -s 0 /var/log/faillog
+2026-07-14 15:19:48,999 | INFO
+2026-07-14 15:19:48.999 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-14 15:19:49,021 | INFO
+2026-07-14 15:19:49,223 | INFO
+2026-07-14 15:19:49,224 | INFO
+2026-07-14 15:19:49.224 | INFO     | aux_os_w:run_cmd:50 - 命令下发：sudo truncate -s 0 /var/log/dmesg
+2026-07-14 15:19:49,324 | INFO
+2026-07-14 15:19:49.323 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-14 15:19:49,342 | INFO
+2026-07-14 15:19:49,548 | INFO
+2026-07-14 15:19:49,548 | INFO
+2026-07-14 15:19:49.548 | INFO     | aux_os_w:run_cmd:50 - 命令下发：which vlc
+2026-07-14 15:19:49,634 | INFO
+2026-07-14 15:19:49.634 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+/usr/bin/vlc
+
+2026-07-14 15:19:49,635 | INFO
+2026-07-14 15:19:49.634 | INFO     | aux_os_w:ensure_vlc:160 - VLC 已安装
+2026-07-14 15:19:49,659 | INFO
+2026-07-14 15:19:49,868 | INFO
+2026-07-14 15:19:49,954 | INFO
+2026-07-14 15:19:50,241 | INFO
+2026-07-14 15:19:50.241 | INFO     | aux_os_w:upload_file_sftp:333 - 上传成功: C:\Users\Admin1\Desktop\pc\test_cases\bj_compatibility\os\video_format\test_video.mp4 -> /tmp/test_video.mp4
+2026-07-14 15:19:50,241 | INFO
+2026-07-14 15:19:50,242 | INFO
+2026-07-14 15:19:50.242 | INFO     | test_cases.bj_compatibility.os.test_os_internal_speaker:test_os_internal_speaker:37 - 第1次播放视频
+2026-07-14 15:19:50,251 | INFO
+2026-07-14 15:19:50,411 | INFO
+2026-07-14 15:19:50,413 | INFO
+2026-07-14 15:19:50.412 | INFO     | aux_os_w:run_cmd:50 - 命令下发：rm -f /tmp/vlc_play.log
+2026-07-14 15:19:50,502 | INFO
+2026-07-14 15:19:50.501 | INFO     | aux_os_w:run_cmd:65 - 命令回显：result：
+
+2026-07-14 15:19:50,503 | INFO
+2026-07-14 15:19:50.503 | INFO     | aux_os_w:vlc_video_play:529 - 开始远程播放视频，预期时长120秒...
+2026-07-14 15:19:50,515 | INFO
+2026-07-14 15:19:50,679 | INFO
+2026-07-14 15:19:50,679 | INFO
+2026-07-14 15:19:50.679 | INFO     | aux_os_w:run_cmd:50 - 命令下发：export DISPLAY=:0; vlc -v --file-logging --logfile=/tmp/vlc_play.log --verbose=2 --stop-time=120 --play-and-exit "/tmp/test_video.mp4"
